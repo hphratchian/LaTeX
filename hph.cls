@@ -1,6 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{hph-hw}[2015/09/14 A custom class file for homework assignments and other items used in the Hratchian Group at UC Merced.]
+\ProvidesClass{hph}[2017/06/17 A class file for documents written in the Hratchian Group at UC Merced.]
 \LoadClass[11pt]{article}
+%
+% This LaTeX class file provides a number of format options and tools used
+% in the Hratchian Group at the University of California, Merced.
+%
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
