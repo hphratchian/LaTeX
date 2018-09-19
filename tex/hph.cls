@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{hph}[2017/06/17 A class file for documents written in the Hratchian Group at UC Merced.]
-\LoadClass[11pt]{article}
+\LoadClass[11pt]{report}
 %
 % This LaTeX class file provides a number of format options and tools used
 % in the Hratchian Group at the University of California, Merced.
@@ -21,12 +21,13 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{helvet}
 \RequirePackage{layouts}
-\RequirePackage{upgreek,amsmath,amsthm,mathrsfs,xfrac,mathtools,dsfont}
+\RequirePackage{upgreek,amsmath,amsthm,amssymb,mathrsfs,xfrac,mathtools,dsfont}
 \RequirePackage{parskip}
 \RequirePackage[compact,medium]{titlesec}
 \RequirePackage{enumitem,etoolbox}
 \RequirePackage{lipsum}
 \RequirePackage[biblabel=period,usetitle=true]{achemso}
+\RequirePackage{needspace}
 \RequirePackage{verbatim}
 %hph+
 %\RequirePackage[framemethod=TikZ]{mdframed}
@@ -40,6 +41,27 @@
 %%  Section 2. Define and initialize package options.
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\newboolean{HPHHW@DueDateEndOfClass}
+\setboolean{HPHHW@DueDateEndOfClass}{true}
+\newboolean{HPHHW@DueDateMidnight}
+\setboolean{HPHHW@DueDateMidnight}{false}
+\DeclareOption{dueendofclass}{
+  \setboolean{HPHHW@DueDateEndOfClass}{true}
+  \setboolean{HPHHW@DueDateMidnight}{false}
+}
+\DeclareOption{duemidnight}{
+  \setboolean{HPHHW@DueDateEndOfClass}{false}
+  \setboolean{HPHHW@DueDateMidnight}{true}
+}
+\DeclareOption{noduedate}{
+  \setboolean{HPHHW@DueDateEndOfClass}{false}
+  \setboolean{HPHHW@DueDateMidnight}{false}
+}
+\DeclareOption{nodate}{
+  \setboolean{HPHHW@DueDateEndOfClass}{false}
+  \setboolean{HPHHW@DueDateMidnight}{false}
+}
 %
 \newboolean{HPHHW@SolutionsVersion}
 \setboolean{HPHHW@SolutionsVersion}{false}
@@ -374,7 +396,12 @@
       {
         \vspace{3mm}
         \textit{Complete the following problems.}\\
-        \textit{\textbf{This assignment is due at the start of class on \HPHHW@DueDate.}}\\
+        \ifthenelse{\boolean{HPHHW@DueDateEndOfClass}}
+          {\textit{\textbf{This assignment is due at the start of class on \HPHHW@DueDate.}}\\}
+          {}
+        \ifthenelse{\boolean{HPHHW@DueDateMidnight}}
+          {\textit{\textbf{This assignment is due by 11:59~pm on \HPHHW@DueDate.}}\\}
+          {}
       }{
         \ifthenelse{\NOT\boolean{HPHHW@Notes}}
         {
