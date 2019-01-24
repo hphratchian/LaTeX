@@ -301,6 +301,11 @@
   \renewcommand{\HPHHW@ActivityTitle}{#1}
 }
 %
+%   \settypee
+\newcommand{\settype}[1]{
+  \renewcommand{\HPHHW@ActivityType}{#1}
+}
+%
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
