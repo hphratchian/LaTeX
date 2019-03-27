@@ -1,0 +1,91 @@
+%
+% Custom Symbols
+%
+%   \degree
+%   \updownarrow
+%   \deter
+%   \bra
+%   \ket
+%   \expect
+%   \bracket
+%   \bracketdoubar
+%   \bracketop
+%   \eri
+%   \eridoubar
+%
+\providecommand{\degree}{\ensuremath{^\circ}}
+
+\providecommand{\updownarrow}{abc}
+\renewcommand{\updownarrow}
+  {\ensuremath
+    {\uparrow\downarrow}
+  }
+
+\providecommand{\deter}{abc}
+\renewcommand{\deter}[1]
+  {\ensuremath
+    {\left| #1 \right|}
+  }
+
+\providecommand{\bra}{abc}
+\renewcommand{\bra}[1]
+  {\ensuremath
+    {\left\langle #1 \right|}
+  }
+
+\providecommand{\ket}{abc}
+\renewcommand{\ket}[1]
+  {\ensuremath
+    {\left| #1 \right\rangle}
+  }
+
+\providecommand{\expect}{abc}
+\renewcommand{\expect}[1]
+  {\ensuremath
+    {\left\langle #1 \right\rangle}
+  }
+
+\providecommand{\bracket}{abc}
+\renewcommand{\bracket}[2]
+  {\ensuremath
+    {\left\langle { #1 }
+      \mathrel{\left | {\vphantom { #1 #2 }}
+      \right. \kern-\nulldelimiterspace}
+      { #2 } \right\rangle}
+  }
+
+\providecommand{\bracketdoubar}{abc}
+\renewcommand{\bracketdoubar}[2]
+  {\ensuremath
+    {\left\langle { #1 }
+      \mathrel{\left | {\vphantom { #1 #2 }}
+      \right| \kern-\nulldelimiterspace}
+      { #2 } \right\rangle}
+  }
+
+\providecommand{\bracketop}{abc}
+\renewcommand{\bracketop}[3]
+  {\ensuremath
+    {\left\langle { #1 }
+      \mathrel{\left | {\vphantom { #1 #2 #3 }} #2
+      \right| \kern-\nulldelimiterspace}
+      { #3 } \right\rangle}
+  }
+
+\providecommand{\eri}{abc}
+\renewcommand{\eri}[2]
+  {\ensuremath
+    {\left( { #1 }
+      \mathrel{\left | {\vphantom { #1 #2 }}
+      \right. \kern-\nulldelimiterspace}
+      { #2 } \right)}
+  }
+
+\providecommand{\eridoubar}{abc}
+\renewcommand{\eridoubar}[2]
+  {\ensuremath
+    {\left( { #1 }
+      \mathrel{\left | {\vphantom { #1 #2 }}
+      \right| \kern-\nulldelimiterspace}
+      { #2 } \right)}
+  }
