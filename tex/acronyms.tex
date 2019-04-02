@@ -21,6 +21,7 @@
 %           CI
 %	    CAS
 %	    NO
+%           NIO
 %           UCM
 %           MCSD
 %
@@ -174,18 +175,29 @@
 \newcounter{cascounter} \setcounter{cascounter}{0}
 \providecommand{\CAS}{abc}
 \renewcommand{\CAS}
-  {\addtocounter{cascounter}{1}\ifthenelse{\equal{\thecascounter}{1}}{Complete Active Space (CAS)}{CAS}}
+  {\addtocounter{cascounter}{1}\ifthenelse{\equal{\thehphnocounter}{1}}{Complete Active Space (CAS)}{CAS}}
 %
 %   \NO
 \newcounter{hphnocounter} \setcounter{hphnocounter}{0}
 \providecommand{\NO}{abc}
 \renewcommand{\NO}
-  {\addtocounter{hphnocounter}{1}\ifthenelse{\equal{\thehphnocounter}{1}}{atomic
+  {\addtocounter{hphnocounter}{1}\ifthenelse{\equal{\thehphnocounter}{1}}{natural
   orbital (NO)}{NO}}
 \providecommand{\NOs}{abc}
 \renewcommand{\NOs}
   {\addtocounter{hphnocounter}{1}\ifthenelse{\equal{\thehphnocounter}{1}}{natural
   orbitals (NOs)}{NOs}}
+%
+%   \NIO
+\newcounter{hphniocounter} \setcounter{hphniocounter}{0}
+\providecommand{\NIO}{abc}
+\renewcommand{\NIO}
+  {\addtocounter{hphniocounter}{1}\ifthenelse{\equal{\thehphniocounter}{1}}{Natural
+  Ionization Orbtial (NIO)}{NIO}}
+\providecommand{\NIOs}{abc}
+\renewcommand{\NIOs}
+  {\addtocounter{hphniocounter}{1}\ifthenelse{\equal{\thehphniocounter}{1}}{Natural
+  Ionization Orbitals (NIOs)}{NIOs}}
 %
 %   \UCM
 \newcounter{hphucmcounter} \setcounter{hphucmcounter}{0}
