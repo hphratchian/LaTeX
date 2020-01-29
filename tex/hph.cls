@@ -13,6 +13,8 @@
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
+%hph \usepackage{sfmath}
+\RequirePackage{sfmath}
 \RequirePackage{soul,varwidth}
 \RequirePackage[normalem]{ulem}
 \RequirePackage{ifthen,floatflt,graphicx,setspace,subfigure,xcolor}
