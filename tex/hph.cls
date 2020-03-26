@@ -580,11 +580,7 @@
 %
 \newcommand{\multiplechoicesolution}[1]{
   \ifthenelse{\boolean{HPHHW@SolutionsVersion}}
-  {
-    {\color{blue} \boxed{#1}}
-  }{
-    #1
-  }
+  {{\color{blue}\boxed{#1}}}{#1}
 }
 %
 %
