@@ -13,6 +13,8 @@
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
+%hph \usepackage{sfmath}
+\RequirePackage{sfmath}
 \RequirePackage{soul,varwidth}
 \RequirePackage[normalem]{ulem}
 \RequirePackage{ifthen,floatflt,graphicx,setspace,subfigure,xcolor}
@@ -574,11 +576,7 @@
 %
 \newcommand{\multiplechoicesolution}[1]{
   \ifthenelse{\boolean{HPHHW@SolutionsVersion}}
-  {
-    {\color{blue} \boxed{#1}}
-  }{
-    #1
-  }
+  {{\color{blue}\boxed{#1}}}{#1}
 }
 %
 %

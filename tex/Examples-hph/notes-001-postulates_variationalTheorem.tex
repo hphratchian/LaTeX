@@ -1,0 +1,329 @@
+\LoadClass[notes]{hph}
+\setauthor{Hrant P.~Hratchian}
+\settitle{\textsc{Chem 225} Notes: Some Introductory Topics}
+\setrunningtitle{Quantum Chemistry Background}
+\setdate{January 23, 2019}
+\setcounter{chapter}{1}
+\setcounter{section}{0}
+\setlength{\parindent}{1em}
+%
+% Fix the spacing around full-sized left- and right-curly brackets.
+\let\originalleft\left
+\let\originalright\right
+\renewcommand{\left}{\mathopen{}\mathclose\bgroup\originalleft}
+\renewcommand{\right}{\aftergroup\egroup\originalright}
+%
+% Set-up my proof environment, "hphproof".
+\newcommand*{\qedfilled}{\hfill\ensuremath{\blacksquare}\\\rule{\textwidth}{0.4pt}}%
+\newtheoremstyle{hphstyle}% name of the style to be used
+  {\topsep}% measure of space to leave above the theorem. E.g.: 3pt
+  {\topsep}% measure of space to leave below the theorem. E.g.: 3pt
+  {}% name of font to use in the body of the theorem
+  {}% measure of space to indent
+  {\bfseries}% name of head font
+  {}% punctuation between head and body
+  {\newline}% space after theorem head; " " = normal inter-word space
+  {\rule{\textwidth}{0.4pt}\\*%
+   \thmname{#1}~\thmnumber{#2}\thmnote{\ -\ #3}\\*[-1.5ex]%
+   \rule{\textwidth}{0.4pt}%
+  }% Manually specify head
+%
+% Test of new commands/theorems/environments...
+\theoremstyle{hphstyle}
+\newtheorem{hphproof}{Proof}[chapter]
+%
+% Begin the document...
+\begin{document}
+\makeheaderfooter{}
+\maketitle
+%
+%
+This set of notes outlines the postulates of quantum mechanics and the variational theory. We will make good use of variational \emph{method} this semester, which applies the variational \emph{theory} to numerically determine approximate wave functions.
+
+%
+% Section 1. Postulates of Quantum Mechanics
+\section{Postulates of Quantum Mechanics}
+The launch pad for our discussions is the \emph{postulates of quantum mechanics}. Let us consider these postulates in turn.
+
+%
+\subsection{Postulate 1}
+The first postulate of quantum mechanics assumes that the state of a system
+is entirely described by a function of the system's component coordinates
+and of time. Such a function is required to be single-valued, continuous,
+and (with the exception of continuum states) quadratically integrable. In
+more abstract terms, at any instant we take the so-called \emph{ket}
+\ket{\Psi} as a representation of the physical system of interest in the
+space of allowed states. The \emph{space of states} is a vector space.
+Therefore, a superposition of known states must also be a state of the
+system.
+
+%
+\subsection{Postulate 2}
+The second postulate of quantum mechanics states that every observable
+property has a corresponding linear Hermitian operator. These quantum
+mechanical operators are closely related to classical analogues. To define
+a quantum mechanical operator, one begins with the classical form and
+replaces position and (linear) momentum terms with corresponding quantum
+mechanical representations. In the position representation, we have
+%
+\begin{equation}
+\displaystyle
+  \braket{x}{\hat{x}} = x
+\end{equation}
+%
+and
+%
+\begin{equation}
+\displaystyle
+  \braket{x}{\hat{p}_x} = -i\hbar\frac{\partial{}}{\partial{}{x}}
+\end{equation}
+%
+
+%
+\subsection{Postulate 3}
+When measuring an observable, $\mathbf{A}$, associated with Hermitian
+operator $\mathcal{A}$, the only possible measurements will be equal to
+eigenvalues of the operator. Mathematically, such eigenvalues, ${a_i}$, are
+related to $\mathcal{A}$ and eigen-functions/kets according to
+%
+\begin{equation}
+\displaystyle
+  \mathcal{A}\ket{f_i} = a_i\ket{f_i}
+\end{equation}
+%
+where \ket{f_i} are required to obey the requirements of a well-behaved
+wave function articulated in Postulate 1.
+
+%
+% Proof: E-vals of Hermitian operator are real. 
+\needspace{3\baselineskip}%
+\begin{hphproof}[Eigenvalues of a linear Hermitian operator are real.]
+Let $\mathcal{A}$ be a Hermitian operator. Let \ket{i} be an eigenstate of this operator with corresponding eigenvalue $a_i$. Because $\mathcal{A}$ is Hermitian,
+%
+\begin{equation*}
+\displaystyle
+  \braketop{i}{\mathcal{A}}{i} = \braketop{i}{\mathcal{A}}{i}^*
+\end{equation*}
+%
+\begin{equation*}
+\displaystyle
+\begin{split}
+  \braketop{i}{a_i}{i} ={}& \braketop{i}{a_i}{i}^*   \\
+  a_i\braket{i}{i} ={}& a_i^* \braket{i}{i}^*   \\
+  a_i 1 ={}& a_i^* 1
+\end{split}
+\end{equation*}
+Therefore, $a_i = a_i^*$ and thus $a_i$ must be a real number.
+%
+\qedfilled
+\end{hphproof}
+%
+
+Furthermore, it is postulated that the set of eigen-kets of a linear Hermitian
+operator forms a \emph{complete set} that can be taken to be orthonormal.
+Therefore, any function $\ket{g}$ can be expanded in this set of eigen-kets:
+%
+\begin{equation}\label{Eq:expansionOverEigenKets}
+\displaystyle
+  \ket{g} = \sum_i{c_i\ket{f_i}}
+\end{equation}
+%
+In general, the expansion coefficients ${c_i}$ may be complex.
+
+Importantly, while it is postulated that a measurement of property $\mathbf{A}$ must be equal to an eigenvalue of operator $\mathcal{A}$ there is no requirement that the system's state be described by an eigen-ket of the operator at the instant just prior to the measurement. There are two important consequences of this detail. First, we cannot know in advance of a measurement which eigenvalue will be recorded. However, if we know the eigen-kets of the operator $\mathcal{A}$ and the current state \ket{g} the \emph{probability} that eigenvalue $a_i$ will be the measured value is equal to $\left| c_i \right|^2$ (using Eq.~\ref{Eq:expansionOverEigenKets}).
+
+%
+% Proof: Non-degenerate e-functions of Hermitian operator are orthogonal. 
+\begin{hphproof}[Non-degenerate eigenfunctions of a linear Hermitian operator are orthogonal.]
+Let $\mathcal{A}$ be a Hermitian operator. Let \ket{i} and \ket{j} be eigenstates of this operator with corresponding eigenvalues $a_i$ and $a_j$, respectively. Because $\mathcal{A}$ is Hermitian,
+%
+\begin{equation*}
+\displaystyle
+  \braketop{i}{\mathcal{A}}{j} = \braketop{j}{\mathcal{A}}{i}^*
+\end{equation*}
+%
+Operating with $\mathcal{A}$ and recalling that all eigenvalues of a Hermitian operator are real yields
+%
+\begin{equation*}
+\displaystyle
+\begin{split}
+  a_j\braket{i}{j} ={}& a_i\braket{j}{i}^*   \\
+  a_j\braket{i}{j} ={}& a_i\braket{i}{j}   \\
+  0 ={}& \left(a_i - a_j\right) \braket{i}{j}
+\end{split}
+\end{equation*}
+%
+Because the eigenfunctions are non-degenerate, $(a_i-a_j)\ne{}0$. Therefore, non-degenerate eigenfunctions are orthogonal, $\braket{i}{j}=0$.
+%
+\qedfilled
+\end{hphproof}
+%
+
+The second consequence of this postulate addresses what happens to the wave function once a
+measurement has occurred. At the instant one takes a measurement, the wave function must "collapse" to an eigenstate of the corresponding Hermitian operator. Therefore, this means that measurement effects the state of the system. As a final detail, note that if a measurement returns an eigenvalue corresponding to a degenerate set of eigenkets the wave function collapses onto a projection of the Hilbert sub-space defined by this set of eigenkets.
+
+%
+\subsection{Postulate 4}
+If the state of a system is given by the normalized ket \ket{\Psi}, then the average value of the observable corresponding to operator $\mathcal{A}$ is given by the so-called "expectation value". The expectation value, $\expect{A}$, is mathematically given by
+%
+\begin{equation}
+\displaystyle
+  \expect{A} = \frac{
+    \braketop{\Psi}{\mathcal{A}}{\Psi}}
+    {\braket{\Psi}{\Psi}
+  }
+\end{equation}
+
+%
+\subsection{Postulate 5}
+The state function of a system evolves according to the time-dependent
+Schr\"{o}dinger equation.
+%
+\begin{equation}
+\displaystyle
+  \mathcal{H}\Psi\left(\mathbf{r},t\right) =
+    i\hbar\frac{\partial{\Psi}}{\partial{t}}
+\end{equation}
+
+%
+\subsection{Postulate 6}
+We shall consider only non-relativistic quantum mechanics. As such, we take
+the \emph{antisymmetry principle} as an additional postulate of quantum
+mechanics. This postulate requires the total wave
+function of a system be antisymmetric with respect to the interchange
+of all coordinates of a given fermion with those of any other fermion. The set
+of coordinates includes spin coordinates. The Pauli exclusion principle
+is a direct consequence of the antisymmetry principle.
+
+%
+% Section 2. Approximate Wave Functions Using the Variational Method
+\section{Approximate Wave Function Methods Using the Variational Method}
+In molecular quantum chemistry, analytic solutions to the Schr\"{o}dinger Equation are not commonly possible. Instead, we turn to approximate solutions that can be conveniently determinate using numerical methods. To ensure such approximate approaches are well-behaved and reasonable for use in exploring chemistry and making predictions, it is essential that their development be grounded in solid theoretical footings. The two most common approximate methods used in electronic structure theory are based on the (linear) variational method and perturbation theory. We will return to perturbation theory later in the semester, and focus only on the variational method here.
+
+As the name suggests, the variational method is based on the \emph{variational theorem} that you were likely introduced to in previous quantum chemistry courses. We begin this section by defining and proving this theorem. We will then develop the variational method, which is a direct application of the variational theorem.
+
+\subsection{The Variational Theorem}
+The \emph{variational theorem} states that the energy expectation value of an approximate ground state wave function is always greater than or equal to the energy expectation value of the true ground state wave function. Mathematically, the variational theorem is given by
+%
+\begin{equation}\label{Eq:variational_theorm_def}
+  \displaystyle
+  \frac{\braketop{\widetilde{\Phi}}{\mathcal{H}}{\widetilde{\Phi}}}{\braket{\widetilde{\Phi}}{\widetilde{\Phi}}} \ge{} E_0
+\end{equation}
+%
+where $\widetilde{\Phi}$ is the approximate wave function, $E_0$ is the true ground-state energy, and $\mathcal{H}$ is the Hamiltonian operator.
+
+The proof of the variational theorem requires two initial derivations. First, we note that the eigenkets of the Hamiltonian are \ket{\Phi_i} with corresponding eigenvalues $E_i$ with $i$ running from 0 to $n$. Thus,
+%
+\begin{equation}
+  \displaystyle
+  \mathcal{H}\ket{\Phi_i} = E_i\ket{\Phi_i}
+\end{equation}
+%
+By definition, we take the eigenvalue indices to be ordered by energy, $E_0 \le{} E_1 \le{} E_2 \le{} \cdots \le{} E_n$. Requiring the set $\{\ket{\Phi_i}\}$ define a Hilbert space and therefore comprise a complete orthonormal set, any other ket spanning this Hilbert space, \ket{\widetilde{\Phi}}, can be expanding by the linear combination
+%
+\begin{equation}\label{Eq:variational_theorem_complete_set_expansion_def}
+  \displaystyle
+  \ket{\widetilde{\Phi}} = \sum_i{c_i\ket{\Phi_i}}
+\end{equation}
+%
+where $\{c_i\}$ is the set of expansion coefficients. Using Eq.~(\ref{Eq:variational_theorem_complete_set_expansion_def}), we have that the inner-product of an approximate wave function \ket{\widetilde{\Phi}} is given by
+%
+\begin{equation}\label{Eq:variational_theorem_approx_wf_normalization}
+  \displaystyle
+  \begin{split}
+    \braket{\widetilde{\Phi}}{\widetilde{\Phi}} ={}&
+      \braket{\sum_i{c_i\ket{\Phi_i}}}{\sum_j{c_j\ket{\Phi{j}}}}   \\
+    ={}& \sum_{ij}{c_i^*c_j\braket{\Phi_i}{\Phi_j}}   \\
+    ={}& \sum_{ij}{c_i^*c_j\delta_{ij}}   \\
+    \braket{\widetilde{\Phi}}{\widetilde{\Phi}} ={}&
+      \sum_i{\left| c_i \right|^2}   \\
+  \end{split}
+\end{equation}
+%
+It will be convenient to require the approximate wave function be normalized, which is equivalent to requiring $\sum_i{\left| c_i \right|^2} = 1$.
+
+In a similar way, we can derive the energy expectation value of the approximate wave function in terms of Hamiltonian eigenkets and eigenvalues. \emph{Viz}.
+%
+\begin{equation}\label{Eq:variational_theorem_approx_energy}
+  \displaystyle
+  \begin{split}
+    \widetilde{E} ={}& \braketop{\widetilde{\Phi}}{\mathcal{H}}{\widetilde{\Phi}}   \\
+      ={}& \braketop{\sum_i{c_i \Phi_i}}{\mathcal{H}}{\sum_j{c_j \Phi_j}}   \\
+      ={}& \sum_{ij}{c_i^* c_j \braketop{\Phi_i}{\mathcal{H}}{\Phi_j}}   \\
+      ={}& \sum_{ij}{c_i^* c_j E_j \braket{\Phi_i}{\Phi_j}}   \\
+      ={}& \sum_{ij}{c_i^* c_j E_j \delta_{ij}}   \\
+    \widetilde{E} ={}& \sum_{i}{\left| c_i \right|^2 E_i}   \\
+  \end{split}
+\end{equation}
+
+With the expressions shown above in-hand, the variational theorem is simple to prove (\emph{vide infra}).
+
+\begin{hphproof}[The variational theorem.] 
+%
+Proof of the variational theorem begins by considering the expectation value \expect{\mathcal{H}-E_0}. 
+%
+\begin{equation*}
+  \displaystyle
+    \expect{\mathcal{H}-E_0} = \braketop{\widetilde{\Phi}}{\mathcal{H}-E_0}{\widetilde{\Phi}}
+\end{equation*}
+%
+Employing Eq.~(\ref{Eq:variational_theorem_complete_set_expansion_def}) gives
+%
+\begin{equation*}
+  \displaystyle
+  \begin{split}
+    \expect{\mathcal{H}-E_0} ={}& \braketop{\sum_i{c_i \Phi_i}}{\mathcal{H}-E_0}{\sum_j{c_j \Phi_j}}   \\
+      ={}& \braketop{\sum_i{c_i \Phi_i}}{\mathcal{H}}{\sum_j{c_j \Phi_j}}
+        - \braketop{\sum_i{c_i \Phi_i}}{E_0}{\sum_j{c_j \Phi_j}}   \\
+      ={}& \sum_{ij}{\left(
+        c_i^* c_j \braketop{\Phi_i}{\mathcal{H}}{\Phi_j} - E_0 c_i^* c_j \braket{\Phi_i}{\Phi_j}
+        \right)}  \\
+  \end{split}
+\end{equation*}
+%
+Recalling that we have defined the set $\{\ket{\Phi_i}\}$ is orthonormal, we have
+%
+\begin{equation*}
+  \displaystyle
+  \begin{split}
+    \expect{\mathcal{H}-E_0}
+      ={}& \sum_{ij}{\left(
+        c_i^* c_j E_j \braket{\Phi_i}{\Phi_j} - E_0 c_i^* c_j \braket{\Phi_i}{\Phi_j}
+        \right)}  \\
+      ={}& \sum_{ij}{\left(
+        c_i^* c_j E_j \delta_{ij} - E_0 c_i^* c_j \delta_{ij}
+        \right)}  \\
+      ={}& \sum_{i}{\left(
+        c_i^* c_i E_i - E_0 c_i^* c_i
+        \right)}  \\
+      ={}& \sum_{i}{
+        \left| c_i \right|^2 \left( E_i - E_0 \right)}  \\
+  \end{split}
+\end{equation*}
+%
+Since both $\left| c_i \right|^2$ and $(E_i - E_0)$ are necessarily positive, the previous expressions must be greater than or equal to zero. This gives
+%
+\begin{equation*}
+  \displaystyle
+  \begin{split}
+    \sum_i{\left| c_i \right|^2 \left( E_i - E_0 \right)} \ge{}& 0   \\
+    \sum_i{\left| c_i \right|^2 E_i} - \sum_i{\left| c_i \right|^2 E_0} \ge{}& 0   \\ 
+    \sum_i{\left| c_i \right|^2 E_i} \ge{}& E_0 \sum_i{\left| c_i \right|^2}   \\ 
+  \end{split}
+\end{equation*}
+%
+Using Eq.~(\ref{Eq:variational_theorem_approx_energy}) on the left hand side of the inequality and Eq.~(\ref{Eq:variational_theorem_approx_wf_normalization}) on the right hand side of the inequality gives
+%
+\begin{equation*}
+  \displaystyle
+  \widetilde{E} = \braketop{\widetilde{\Phi}}{\mathcal{H}}{\widetilde{\Phi}} \ge{} E_0
+\end{equation*}
+
+\qedfilled
+
+\end{hphproof}
+
+
+
+%
+\end{document}

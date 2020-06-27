@@ -1,0 +1,118 @@
+\documentclass[11pt]{article}
+\usepackage{wrapfig}
+%hph \usepackage{parskip}
+\usepackage[biblabel=period,usetitle=true]{achemso}
+\usepackage{amssymb,ifthen,floatflt,graphicx,setspace,subfigure,multirow}
+\usepackage[mathscr]{eucal}
+%hph \usepackage[format=plain,font={footnotesize,sf},labelfont={sc},labelsep=period]{caption}
+\usepackage{caption}
+\usepackage[compact,medium]{titlesec}
+\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+\usepackage[usenames,dvipsnames]{xcolor}
+%
+% Set-up the general font type.
+%
+%hph \usepackage{helvet}
+%
+% Set-up super- and sub- scripts.
+%
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+%
+% Set-up captions.
+%
+\DeclareCaptionLabelSeparator{hphlabelsep}{.~}
+\captionsetup{format=plain,font={footnotesize,sf},labelfont={sc},labelsep=hphlabelsep,skip=14pt}
+%
+% Change vertical spacing between bibliography entries.
+%
+\setlength{\bibsep}{3.5pt}
+%
+% Set the title and author.
+%
+\providecommand{\mytitle}{
+  \vspace{2mm}
+  {
+  \sffamily\textbf{\large{}
+    CAREER: Development of Efficient Spin Projection Models with Applications to Transition Metal Oxides\\}%
+  }
+  \vspace{1mm}
+}
+\providecommand{\myauthor}{
+    Hrant P. Hratchian\\
+    \textit{Department of Chemistry \& Chemical Biology, University of California, Merced}
+    \vspace{5mm}
+}
+
+%hph
+\usepackage[margin=1.0in]{geometry}
+%hph
+
+%hph
+%%
+%% Set-up the general page layout.
+%%
+%\topmargin -0.350 in
+%\headheight 0.0 in
+%\headsep 0.0 in
+%\oddsidemargin -0.125 in
+%\evensidemargin -0.125 in
+%%hph\voffset -0.25 in
+%\textheight 9.50 in   % Used to be 9.5 in
+%\textwidth 6.75 in
+%hph
+
+%hph-start
+\linespread{1.05}
+% \linespread{1.75}
+% \setlength{\parindent}{0em}
+%hph-end
+
+%
+% Reset marginpar.
+%
+\def\mp#1{\marginpar{\tiny{}#1}}
+
+%
+% Set section heading formatting.
+%
+\titleformat{\section}{\sffamily\normalsize\scshape\bfseries}{\thesection.}{0.2em}{}
+\titlespacing{\section}{0pt}{5mm}{1mm}
+
+%hph\titleformat{\subsection}{\normalsize\slshape\bfseries}{\thesubsection.}{0.2em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0.2em}{}
+\titlespacing{\subsection}{0pt}{3mm}{0.2mm}
+%hph \titleformat{\subsection}[runin]{\normalsize\slshape\bfseries}{\thesubsection.}{0.2em}{}[.]
+%hph \titlespacing{\subsection}{0pt}{*2}{*1}
+
+%hph \titleformat{\subsubsection}{\normalsize\slshape}{\thesubsubsection.}{0.2em}{}
+%hph \titlespacing{\subsubsection}{0pt}{7mm}{*1}
+\titleformat{\subsubsection}[runin]{\normalsize\slshape\bfseries}{}{0em}{}[.]
+\titlespacing{\subsubsection}{0pt}{*2}{*1}
+%
+% General executive summary environment.
+%
+\newenvironment{ExecutiveStatement}[1][Abstract]
+  {
+    \begin{center}\begin{minipage}{5.5 in}
+    \noindent\rule{5.5 in}{1 pt}\\
+    \noindent\small\textbf{#1.}
+  }
+  {
+    \\
+    \noindent\rule{5.5 in}{1 pt} 
+    \end{minipage}\end{center}
+  }
+%
+% Define the changemargin command.
+%
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+%
+% Define hyphenation.
+%
+\hyphenpenalty=2500
+\hyphenation{area areas metalla-cycle rho-dop-sin wave-pac-ket
+  con-form-ation-al quan-tum AD-MP with-in prop-aga-tion Mat-rix nano-tubes
+  treat-ed CAS-SCF conduct-ed tri-methyl-amine meth-od-ology ph-ase
+  pre-sent-ed treat-ed inst-ances phy-sics implicated}
