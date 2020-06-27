@@ -29,10 +29,6 @@
 \RequirePackage[biblabel=period,usetitle=true]{achemso}
 \RequirePackage{needspace}
 \RequirePackage{verbatim}
-%hph+
-%\RequirePackage[framemethod=TikZ]{mdframed}
-%\RequirePackage{tcolorbox}
-%hph-
 
 %
 %
