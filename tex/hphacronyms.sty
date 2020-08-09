@@ -1,46 +1,36 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{hph}[2017/06/17 A class file for documents written in the Hratchian Group at UC Merced.]
-\LoadClass[11pt]{report}
+\ProvidesPackage{hphacronyms}[2020/08/09]
 %
-% This LaTeX class file provides a number of format options and tools used
-% in the Hratchian Group at the University of California, Merced.
-%
+% This LaTeX style provides a number of macros for symbols frequently used
+% by the Hratchian Group at the University of California, Merced.
 %
 %
-
-
-
+%
+%  Macros for convenient typesetting...these are mostly for quantum
+%  mechanics/chemistry symbols, etc. The list of available macros includes:
+%                 \lceil,\rceil
+%                 \lfloor,\rfloor
+%                 \sgn
+%                 \negsign
+%                 \EE{N}       This gives \times{}10^{N}
+%                 \degree
+%                 \updownarrow
+%                 \commutator
+%                 \anticommutator
+%                 \deter
+%                 \bra
+%                 \ket
+%                 \expect
+%                 \braket
+%                 \ketbra
+%                 \braketdoubar
+%                 \braketop
+%                 \spatialbraketop
+%                 \eri
+%                 \eridoubar
+%                 \orb
 %
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%
-%%  Section 8. Macros for convenient typesetting...these
-%%             are mostly for quantum mechanics/chemistry
-%%             symbols, etc. The list of available macros
-%%             includes:
-%%                 \lceil,\rceil
-%%                 \lfloor,\rfloor
-%%                 \sgn
-%%                 \negsign
-%%                 \EE{N}       This gives \times{}10^{N}
-%%                 \degree
-%%                 \updownarrow
-%%                 \commutator
-%%                 \anticommutator
-%%                 \deter
-%%                 \bra
-%%                 \ket
-%%                 \expect
-%%                 \braket
-%%                 \ketbra
-%%                 \braketdoubar
-%%                 \braketop
-%%                 \spatialbraketop
-%%                 \eri
-%%                 \eridoubar
-%%                 \orb
-%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
 
@@ -172,3 +162,8 @@
   {\ensuremath
     {#1_{#2}\left(#3\right)}
   }
+%
+%
+% Close out the style file.
+%
+\endinput
