@@ -1,167 +1,212 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{hphacronyms}[2020/08/09]
 %
-% This LaTeX style provides a number of macros for symbols frequently used
-% by the Hratchian Group at the University of California, Merced.
+% This LaTeX style provides controls for a number of acronyms frequently
+% used by the Hratchian Group at the University of California, Merced.
+%
+% Custom commands to handle acronyms. Acronyms handled by these commands
+% include:
+%           \AIMD  -- ab initio molecular dynamics
+%           \AO    -- atomic orbital; \AOs is also available
+%           \AP    -- Approximate Projection (AP)
+%           \CAS   -- Complete Active Space
+%           \CI    -- configuration interaction
+%           \DFT   -- Density Functional Theory
+%           \GHF   -- Generalized Hartree-Fock
+%           \HDE   -- Heisenberg Double Exchange
+%           \HF    -- Hartree-Fock
+%           \IRC   -- intrinsic reaction coordinate; \capIRC is also available
+%           \MCSD  -- Merced City School District
+%           \MO    -- molecular orbital; \MOs is also available
+%           \MLCT  -- metal to ligand charge transfer; \capMLCT is also available
+%           \MPTwo -- second-order Moller-Plesset perturbation theory
+%           \NO    -- natural orbital; \NOs is also available
+%           \PE    -- photoelectron; \catPE is also available
+%           \PES   -- potential energy surface; \PESs, \cat PES, and \capPESs also available
+%           \SCF   -- self-consistent field; \capSCF is also available
+%           \SCO   -- spin crossover; \capSCO is also available
+%           \RPH   -- Reaction Path Hamiltonian
+%           \UCM   -- University of California, Merced
+%           \URVA  -- Unified Reaction Valley Approach
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %
+%   \AIMD
+\newcounter{hphaimdcounter} \setcounter{hphaimdcounter}{0}
+\providecommand{\AIMD}{abc}
+\renewcommand{\AIMD}
+  {\addtocounter{hphaimdcounter}{1}\ifthenelse{\equal{\thehphaimdcounter}{1}}{ab
+  initio molecular dynamics (AIMD)}{AIMD}}
 %
-%  Macros for convenient typesetting...these are mostly for quantum
-%  mechanics/chemistry symbols, etc. The list of available macros includes:
-%                 \lceil,\rceil
-%                 \lfloor,\rfloor
-%                 \sgn
-%                 \negsign
-%                 \EE{N}       This gives \times{}10^{N}
-%                 \degree
-%                 \updownarrow
-%                 \commutator
-%                 \anticommutator
-%                 \deter
-%                 \bra
-%                 \ket
-%                 \expect
-%                 \braket
-%                 \ketbra
-%                 \braketdoubar
-%                 \braketop
-%                 \spatialbraketop
-%                 \eri
-%                 \eridoubar
-%                 \orb
+%   \AO
+\newcounter{hphaocounter} \setcounter{hphaocounter}{0}
+\providecommand{\AO}{abc}
+\renewcommand{\AO}
+  {\addtocounter{hphaocounter}{1}\ifthenelse{\equal{\thehphaocounter}{1}}{atomic
+  orbital (AO)}{AO}}
+\providecommand{\AOs}{abc}
+\renewcommand{\AOs}
+  {\addtocounter{hphaocounter}{1}\ifthenelse{\equal{\thehphaocounter}{1}}{atomic
+  orbitals (AOs)}{AOs}}
 %
+%   \AP
+\newcounter{hphapcounter} \setcounter{hphapcounter}{0}
+\providecommand{\AP}{abc}
+\renewcommand{\AP}
+  {\addtocounter{hphapcounter}{1}\ifthenelse{\equal{\thehphapcounter}{1}}{Approximate Projection (AP)}{AP}}
 %
+%   \CAS
+\newcounter{cascounter} \setcounter{cascounter}{0}
+\providecommand{\CAS}{abc}
+\renewcommand{\CAS}
+  {\addtocounter{cascounter}{1}\ifthenelse{\equal{\thecascounter}{1}}{Complete Active Space (CAS)}{CAS}}
 %
-\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
-
-\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
-
-\DeclareMathOperator{\sgn}{sgn}
-
-\newcommand{\negsign}{
-  {\ensuremath
-    {\scalebox{1.25}[1.2]{-}}
-  }
-}
-
-\newcommand{\EE}[1]{
-  {\ensuremath
-    {\times{}10^{#1}}
-  }
-}
-
-\providecommand{\degree}{\ensuremath{^\circ}}
-
-\providecommand{\updownarrow}{abc}
-\renewcommand{\updownarrow}
-  {\ensuremath
-    {\uparrow\downarrow}%
-  }
-
-\providecommand{\commutator}{abc}
-\renewcommand{\commutator}[2]
-  {\ensuremath
-    {\left[ #1,#2 \right]}%
-  }
-
-\providecommand{\anticommutator}{abc}
-\renewcommand{\anticommutator}[2]
-  {\ensuremath
-    {\left\{ #1,#2 \right\}}%
-  }
-
-\providecommand{\deter}{abc}
-\renewcommand{\deter}[1]
-  {\ensuremath
-    {\left| #1 \right|}%
-  }
-
-\providecommand{\bra}{abc}
-\renewcommand{\bra}[1]
-  {\ensuremath
-    {\left\langle #1 \right|}%
-  }
-
-\providecommand{\ket}{abc}
-\renewcommand{\ket}[1]
-  {\ensuremath
-    {\left| #1 \right\rangle}%
-  }
-
-\providecommand{\expect}{abc}
-\renewcommand{\expect}[1]
-  {\ensuremath
-    {\left\langle #1 \right\rangle}%
-  }
-
-\providecommand{\braket}{abc}
-\renewcommand{\braket}[2]
-  {\ensuremath
-    {\left\langle { #1 }
-      \mathrel{\left | {\vphantom { #1 #2 }}
-      \right. \kern-\nulldelimiterspace}
-      { #2 } \right\rangle}%
-  }
-
-\providecommand{\ketbra}{abc}
-\renewcommand{\ketbra}[2]
-  {\ensuremath
-    {\left| { #1 }
-      \mathrel{\left\rangle {\vphantom { #1 #2 }}
-      \right\langle \kern-\nulldelimiterspace}
-      { #2 } \right|}%
-  }
-
-\providecommand{\braketdoubar}{abc}
-\renewcommand{\braketdoubar}[2]
-  {\ensuremath
-    {\left\langle { #1 }
-      \mathrel{\left | {\vphantom { #1 #2 }}
-      \right| \kern-\nulldelimiterspace}
-      { #2 } \right\rangle}%
-  }
-
-\providecommand{\braketop}{abc}
-\renewcommand{\braketop}[3]
-  {\ensuremath
-    {\left\langle { #1 }
-      \mathrel{\left | {\vphantom { #1 #2 #3 }} #2
-      \right| \kern-\nulldelimiterspace}
-      { #3 } \right\rangle}%
-  }
-
-\providecommand{\spatialbraketop}{abc}
-\renewcommand{\spatialbraketop}[3]
-  {\ensuremath
-    {\left( { #1 }
-      \mathrel{\left | {\vphantom { #1 #2 #3 }} #2
-      \right| \kern-\nulldelimiterspace}
-      { #3 } \right)}%
-  }
-
-\providecommand{\eri}{abc}
-\renewcommand{\eri}[2]
-  {\ensuremath
-    {\left( { #1 }
-      \mathrel{\left | {\vphantom { #1 #2 }}
-      \right. \kern-\nulldelimiterspace}
-      { #2 } \right)}%
-  }
-
-\providecommand{\eridoubar}{abc}
-\renewcommand{\eridoubar}[2]
-  {\ensuremath
-    {\left( { #1 }
-      \mathrel{\left | {\vphantom { #1 #2 }}
-      \right| \kern-\nulldelimiterspace}
-      { #2 } \right)}%
-  }
-
-\providecommand{\orb}{abc}
-\renewcommand{\orb}[3]
-  {\ensuremath
-    {#1_{#2}\left(#3\right)}
-  }
+%   \CI
+\newcounter{cicounter} \setcounter{cicounter}{0}
+\providecommand{\CI}{abc}
+\renewcommand{\CI}
+  {\addtocounter{cicounter}{1}\ifthenelse{\equal{\thecicounter}{1}}{Configuration Interaction (CI)}{CI}}
+%
+%   \DFT
+\newcounter{hphdftcounter} \setcounter{hphdftcounter}{0}
+\providecommand{\DFT}{abc}
+\renewcommand{\DFT}
+  {\addtocounter{hphdftcounter}{1}\ifthenelse{\equal{\thehphdftcounter}{1}}{Density
+  Functional Theory (DFT)}{DFT}}
+%
+%   \GHF
+\newcounter{hphghfcounter} \setcounter{hphghfcounter}{0}
+\providecommand{\GHF}{abc}
+\renewcommand{\GHF}
+  {\addtocounter{hphghfcounter}{1}\ifthenelse{\equal{\thehphghfcounter}{1}}{Generalized
+  Hartree\textendash Fock (GHF)}{GHF}}
+%
+%   \HDE
+\newcounter{hphhdecounter} \setcounter{hphhdecounter}{0}
+\providecommand{\HDE}{abc}
+\renewcommand{\HDE}
+  {\addtocounter{hphhdecounter}{1}\ifthenelse{\equal{\thehphhdecounter}{1}}{Heisenberg Double Exchange (HDE)}{HDE}}  
+%
+%   \HF
+\newcounter{hphhfcounter} \setcounter{hphhfcounter}{0}
+\providecommand{\HF}{abc}
+\renewcommand{\HF}
+  {\addtocounter{hphhfcounter}{1}\ifthenelse{\equal{\thehphhfcounter}{1}}{Hartree\textendash Fock (HF)}{HF}}
+%
+%   \IRC
+\newcounter{hphirccounter} \setcounter{hphirccounter}{0}
+\providecommand{\IRC}{abc}
+\renewcommand{\IRC}
+  {\addtocounter{hphirccounter}{1}\ifthenelse{\equal{\thehphirccounter}{1}}{intrinsic reaction coordinate (IRC)}{IRC}}
+\providecommand{\capIRC}{abc}
+\renewcommand{\capIRC}
+  {\addtocounter{hphirccounter}{1}\ifthenelse{\equal{\thehphirccounter}{1}}{Intrinsic reaction coordinate (IRC)}{IRC}}
+%
+%   \MCSD
+\newcounter{hphmcsdcounter} \setcounter{hphmcsdcounter}{0}
+\providecommand{\MCSD}{abc}
+\renewcommand{\MCSD}
+  {\addtocounter{hphmcsdcounter}{1}\ifthenelse{\equal{\thehphmcsdcounter}{1}}{Merced City School District (MCSD)}{MCSD}}
+%
+%   \MO, \MOs
+\newcounter{hphmocounter} \setcounter{hphmocounter}{0}
+\providecommand{\MO}{abc}
+\renewcommand{\MO}
+  {\addtocounter{hphmocounter}{1}\ifthenelse{\equal{\thehphmocounter}{1}}{molecular
+  orbital (MO)}{MO}}
+\providecommand{\MOs}{abc}
+\renewcommand{\MOs}
+  {\addtocounter{hphmocounter}{1}\ifthenelse{\equal{\thehphmocounter}{1}}{molecular
+  orbitals (MOs)}{MOs}}
+%
+%   \MLCT, \capMLCT
+\newcounter{hphmlctcounter} \setcounter{hphmlctcounter}{0}
+\providecommand{\MLCT}{abc}
+\renewcommand{\MLCT}
+  {\addtocounter{hphmlctcounter}{1}\ifthenelse{\equal{\thehphmlctcounter}{1}}{metal\textendash to\textendash ligand charge transfer (MLCT)}{MLCT}}
+\providecommand{\capMLCT}{abc}
+\renewcommand{\capMLCT}
+  {\addtocounter{hphmlctcounter}{1}\ifthenelse{\equal{\thehphmlctcounter}{1}}{Metal\textendash to\textendash ligand charge transfer (MLCT)}{MLCT}}
+%
+%   \MPTwo
+\newcounter{hphmptwocounter} \setcounter{hphmptwocounter}{0}
+\providecommand{\MPTwo}{abc}
+\renewcommand{\MPTwo}
+  {\addtocounter{hphmptwocounter}{1}\ifthenelse{\equal{\thehphmptwocounter}{1}}{second\textendash{}order
+    M\o{}ller\textendash{}Plesset perturbation theory (MP2)}{MP2}}
+%
+%   \NO
+\newcounter{hphnocounter} \setcounter{hphnocounter}{0}
+\providecommand{\NO}{abc}
+\renewcommand{\NO}
+  {\addtocounter{hphnocounter}{1}\ifthenelse{\equal{\thehphnocounter}{1}}{natural
+  orbital (NO)}{NO}}
+\providecommand{\NOs}{abc}
+\renewcommand{\NOs}
+  {\addtocounter{hphnocounter}{1}\ifthenelse{\equal{\thehphnocounter}{1}}{natural
+  orbitals (NOs)}{NOs}}
+%
+%   \PE
+\newcounter{hphpecounter} \setcounter{hphpecounter}{0}
+\providecommand{\PE}{abc}
+\renewcommand{\PE}
+  {photoelectron}
+\providecommand{\capPE}{abc}
+\renewcommand{\capPE}
+  {Photoelectron}
+%
+%   \PES, \PESs, \capPES, \capPESs
+\newcounter{hphpescounter} \setcounter{hphpescounter}{0}
+\providecommand{\PES}{abc}
+\renewcommand{\PES}
+  {\addtocounter{hphpescounter}{1}\ifthenelse{\equal{\thehphpescounter}{1}}{potential energy surface (PES)}{PES}}
+\providecommand{\PESs}{abc}
+\renewcommand{\PESs}
+  {\addtocounter{hphpescounter}{1}\ifthenelse{\equal{\thehphpescounter}{1}}{potential energy surfaces (PESs)}{PESs}}
+\providecommand{\capPES}{abc}
+\renewcommand{\capPES}
+  {\addtocounter{hphpescounter}{1}\ifthenelse{\equal{\thehphpescounter}{1}}{Potential energy surface (PES)}{PES}}
+\providecommand{\capPESs}{abc}
+\renewcommand{\capPESs}
+  {\addtocounter{hphpescounter}{1}\ifthenelse{\equal{\thehphpescounter}{1}}{Potential energy surfaces (PESs)}{PESs}}
+%
+%   \RPH
+\newcounter{hphrphcounter} \setcounter{hphrphcounter}{0}
+\providecommand{\RPH}{abc}
+\renewcommand{\RPH}
+  {\addtocounter{hphrphcounter}{1}\ifthenelse{\equal{\thehphrphcounter}{1}}{Reaction Path Hamiltonian (RPH)}{RPH}}
+%
+%   \SCF
+\newcounter{hphscfcounter} \setcounter{hphscfcounter}{0}
+\providecommand{\SCF}{abc}
+\renewcommand{\SCF}
+  {\addtocounter{hphscfcounter}{1}\ifthenelse{\equal{\thehphscfcounter}{1}}{self\textendash consistent field (SCF)}{SCF}}
+\providecommand{\capSCF}{abc}
+\renewcommand{\capSCF}
+  {\addtocounter{hphscfcounter}{1}\ifthenelse{\equal{\thehphscfcounter}{1}}{Self\textendash consistent field (SCF)}{SCF}}
+%
+%   \SCO, \capSCO
+\newcounter{hphscocounter} \setcounter{hphscocounter}{0}
+\providecommand{\SCO}{abc}
+\renewcommand{\SCO}
+  {\addtocounter{hphscocounter}{1}\ifthenelse{\equal{\thehphscocounter}{1}}{spin crossover (SCO)}{SCO}}
+\providecommand{\capSCO}{abc}
+\renewcommand{\capSCO}
+  {\addtocounter{hphscocounter}{1}\ifthenelse{\equal{\thehphscocounter}{1}}{Spin crossover (SCO)}{SCO}}
+%
+%   \UCM
+\newcounter{hphucmcounter} \setcounter{hphucmcounter}{0}
+\providecommand{\UCM}{abc}
+\renewcommand{\UCM}
+  {\addtocounter{hphucmcounter}{1}\ifthenelse{\equal{\thehphucmcounter}{1}}{University
+  of California, Merced (UCM)}{UCM}}
+%
+%   \URVA
+\newcounter{hphurvacounter} \setcounter{hphurvacounter}{0}
+\providecommand{\URVA}{abc}
+\renewcommand{\URVA}
+  {\addtocounter{hphurvacounter}{1}\ifthenelse{\equal{\thehphurvacounter}{1}}{Unified Reaction Valley Approach (URVA)}{URVA}}
 %
 %
 % Close out the style file.

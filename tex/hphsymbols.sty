@@ -1,0 +1,167 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{hphsymbols}[2020/08/09]
+%
+% This LaTeX style provides a number of macros for symbols frequently used
+% by the Hratchian Group at the University of California, Merced.
+%
+% Macros for convenient typesetting...these are mostly for quantum
+% mechanics/chemistry symbols, etc. The list of available macros includes:
+%                 \lceil,\rceil
+%                 \lfloor,\rfloor
+%                 \sgn
+%                 \negsign
+%                 \EE{N}       This gives \times{}10^{N}
+%                 \degree
+%                 \updownarrow
+%                 \commutator
+%                 \anticommutator
+%                 \deter
+%                 \bra
+%                 \ket
+%                 \expect
+%                 \braket
+%                 \ketbra
+%                 \braketdoubar
+%                 \braketop
+%                 \spatialbraketop
+%                 \eri
+%                 \eridoubar
+%                 \orb
+%
+%
+%
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+
+\DeclareMathOperator{\sgn}{sgn}
+
+\newcommand{\negsign}{
+  {\ensuremath
+    {\scalebox{1.25}[1.2]{-}}
+  }
+}
+
+\newcommand{\EE}[1]{
+  {\ensuremath
+    {\times{}10^{#1}}
+  }
+}
+
+\providecommand{\degree}{\ensuremath{^\circ}}
+
+\providecommand{\updownarrow}{abc}
+\renewcommand{\updownarrow}
+  {\ensuremath
+    {\uparrow\downarrow}%
+  }
+
+\providecommand{\commutator}{abc}
+\renewcommand{\commutator}[2]
+  {\ensuremath
+    {\left[ #1,#2 \right]}%
+  }
+
+\providecommand{\anticommutator}{abc}
+\renewcommand{\anticommutator}[2]
+  {\ensuremath
+    {\left\{ #1,#2 \right\}}%
+  }
+
+\providecommand{\deter}{abc}
+\renewcommand{\deter}[1]
+  {\ensuremath
+    {\left| #1 \right|}%
+  }
+
+\providecommand{\bra}{abc}
+\renewcommand{\bra}[1]
+  {\ensuremath
+    {\left\langle #1 \right|}%
+  }
+
+\providecommand{\ket}{abc}
+\renewcommand{\ket}[1]
+  {\ensuremath
+    {\left| #1 \right\rangle}%
+  }
+
+\providecommand{\expect}{abc}
+\renewcommand{\expect}[1]
+  {\ensuremath
+    {\left\langle #1 \right\rangle}%
+  }
+
+\providecommand{\braket}{abc}
+\renewcommand{\braket}[2]
+  {\ensuremath
+    {\left\langle { #1 }
+      \mathrel{\left | {\vphantom { #1 #2 }}
+      \right. \kern-\nulldelimiterspace}
+      { #2 } \right\rangle}%
+  }
+
+\providecommand{\ketbra}{abc}
+\renewcommand{\ketbra}[2]
+  {\ensuremath
+    {\left| { #1 }
+      \mathrel{\left\rangle {\vphantom { #1 #2 }}
+      \right\langle \kern-\nulldelimiterspace}
+      { #2 } \right|}%
+  }
+
+\providecommand{\braketdoubar}{abc}
+\renewcommand{\braketdoubar}[2]
+  {\ensuremath
+    {\left\langle { #1 }
+      \mathrel{\left | {\vphantom { #1 #2 }}
+      \right| \kern-\nulldelimiterspace}
+      { #2 } \right\rangle}%
+  }
+
+\providecommand{\braketop}{abc}
+\renewcommand{\braketop}[3]
+  {\ensuremath
+    {\left\langle { #1 }
+      \mathrel{\left | {\vphantom { #1 #2 #3 }} #2
+      \right| \kern-\nulldelimiterspace}
+      { #3 } \right\rangle}%
+  }
+
+\providecommand{\spatialbraketop}{abc}
+\renewcommand{\spatialbraketop}[3]
+  {\ensuremath
+    {\left( { #1 }
+      \mathrel{\left | {\vphantom { #1 #2 #3 }} #2
+      \right| \kern-\nulldelimiterspace}
+      { #3 } \right)}%
+  }
+
+\providecommand{\eri}{abc}
+\renewcommand{\eri}[2]
+  {\ensuremath
+    {\left( { #1 }
+      \mathrel{\left | {\vphantom { #1 #2 }}
+      \right. \kern-\nulldelimiterspace}
+      { #2 } \right)}%
+  }
+
+\providecommand{\eridoubar}{abc}
+\renewcommand{\eridoubar}[2]
+  {\ensuremath
+    {\left( { #1 }
+      \mathrel{\left | {\vphantom { #1 #2 }}
+      \right| \kern-\nulldelimiterspace}
+      { #2 } \right)}%
+  }
+
+\providecommand{\orb}{abc}
+\renewcommand{\orb}[3]
+  {\ensuremath
+    {#1_{#2}\left(#3\right)}
+  }
+%
+%
+% Close out the style file.
+%
+\endinput
