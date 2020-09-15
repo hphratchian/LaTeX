@@ -1,33 +1,40 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{hphacronyms}[2020/08/09]
+\RequirePackage{ifthen}
+\RequirePackage{textgreek}
 %
 % This LaTeX style provides controls for a number of acronyms frequently
 % used by the Hratchian Group at the University of California, Merced.
 %
 % Custom commands to handle acronyms. Acronyms handled by these commands
 % include:
-%           \AIMD  -- ab initio molecular dynamics
-%           \AO    -- atomic orbital; \AOs is also available
-%           \AP    -- Approximate Projection (AP)
-%           \CAS   -- Complete Active Space
-%           \CI    -- configuration interaction
-%           \DFT   -- Density Functional Theory
-%           \GHF   -- Generalized Hartree-Fock
-%           \HDE   -- Heisenberg Double Exchange
-%           \HF    -- Hartree-Fock
-%           \IRC   -- intrinsic reaction coordinate; \capIRC is also available
-%           \MCSD  -- Merced City School District
-%           \MO    -- molecular orbital; \MOs is also available
-%           \MLCT  -- metal to ligand charge transfer; \capMLCT is also available
-%           \MPTwo -- second-order Moller-Plesset perturbation theory
-%           \NO    -- natural orbital; \NOs is also available
-%           \PE    -- photoelectron; \catPE is also available
-%           \PES   -- potential energy surface; \PESs, \cat PES, and \capPESs also available
-%           \SCF   -- self-consistent field; \capSCF is also available
-%           \SCO   -- spin crossover; \capSCO is also available
-%           \RPH   -- Reaction Path Hamiltonian
-%           \UCM   -- University of California, Merced
-%           \URVA  -- Unified Reaction Valley Approach
+%           \AIMD     -- ab initio molecular dynamics
+%           \AO       -- atomic orbital; \AOs is also available
+%           \AP       -- Approximate Projection (AP)
+%           \CAS      -- Complete Active Space
+%           \CI       -- configuration interaction
+%           \deltaDFT -- delta-density-functional-theory
+%           \deltaSCF -- delta-self-consistent-field
+%           \DFT      -- Density Functional Theory
+%           \EOM      -- Equations of Motion (EOM)
+%           \GHF      -- Generalized Hartree-Fock
+%           \HDE      -- Heisenberg Double Exchange
+%           \HF       -- Hartree-Fock
+%           \IRC      -- intrinsic reaction coordinate; \capIRC is also available
+%           \MCSD     -- Merced City School District
+%           \MO       -- molecular orbital; \MOs is also available
+%           \MLCT     -- metal to ligand charge transfer; \capMLCT is also available
+%           \MPTwo    -- second-order Moller-Plesset perturbation theory
+%           \NIO      -- natural ionization orbital; \NIOs, \capNIO, and \capNIOs are also available
+%           \NO       -- natural orbital; \NOs is also available
+%           \PE       -- photoelectron; \catPE is also available
+%           \PES      -- potential energy surface; \PESs, \cat PES, and \capPESs also available
+%           \PSCF     -- post-self-consistent field; \capPSCF is also available
+%           \SCF      -- self-consistent field; \capSCF is also available
+%           \SCO      -- spin crossover; \capSCO is also available
+%           \RPH      -- Reaction Path Hamiltonian
+%           \UCM      -- University of California, Merced
+%           \URVA     -- Unified Reaction Valley Approach
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -68,12 +75,32 @@
 \renewcommand{\CI}
   {\addtocounter{cicounter}{1}\ifthenelse{\equal{\thecicounter}{1}}{Configuration Interaction (CI)}{CI}}
 %
+%   \deltaDFT
+\newcounter{hphdeltadftcounter} \setcounter{hphdeltadftcounter}{0}
+\providecommand{\deltaDFT}{abc}
+\renewcommand{\deltaDFT}
+  {\addtocounter{hphdeltadftcounter}{1}\addtocounter{hphdftcounter}{1}\ifthenelse{\equal{\thehphdftcounter}{1}}{\textDelta{}-self\textendash{}consistent\textendash{}field (\textDelta-DFT)}{\textDelta-DFT}}
+
+%
+%   \deltaSCF
+\newcounter{hphdeltascfcounter} \setcounter{hphdeltascfcounter}{0}
+\providecommand{\deltaSCF}{abc}
+\renewcommand{\deltaSCF}
+  {\addtocounter{hphdeltascfcounter}{1}\addtocounter{hphscfcounter}{1}\ifthenelse{\equal{\thehphscfcounter}{1}}{\textDelta{}-self\textendash{}consistent\textendash{}field (\textDelta-SCF)}{\textDelta-SCF}}
+%
 %   \DFT
 \newcounter{hphdftcounter} \setcounter{hphdftcounter}{0}
 \providecommand{\DFT}{abc}
 \renewcommand{\DFT}
   {\addtocounter{hphdftcounter}{1}\ifthenelse{\equal{\thehphdftcounter}{1}}{Density
   Functional Theory (DFT)}{DFT}}
+%
+%   \EOM
+\newcounter{hpheomcounter} \setcounter{hpheomcounter}{0}
+\providecommand{\EOM}{abc}
+\renewcommand{\EOM}
+  {\addtocounter{hpheomcounter}{1}\ifthenelse{\equal{\thehpheomcounter}{1}}{Equations
+  of Motion (EOM)}{EOM}}
 %
 %   \GHF
 \newcounter{hphghfcounter} \setcounter{hphghfcounter}{0}
@@ -136,6 +163,21 @@
   {\addtocounter{hphmptwocounter}{1}\ifthenelse{\equal{\thehphmptwocounter}{1}}{second\textendash{}order
     M\o{}ller\textendash{}Plesset perturbation theory (MP2)}{MP2}}
 %
+%   \NIO, \NIOs, \capNIO, \capNIOs
+\newcounter{hphniocounter} \setcounter{hphniocounter}{0}
+\providecommand{\NIO}{abc}
+\renewcommand{\NIO}
+  {\addtocounter{hphniocounter}{1}\ifthenelse{\equal{\thehphniocounter}{1}}{natural ionization orbital (NIO)}{NIO}}
+\providecommand{\NIOs}{abc}
+\renewcommand{\NIOs}
+  {\addtocounter{hphniocounter}{1}\ifthenelse{\equal{\thehphniocounter}{1}}{natural ionization orbitals (NIOs)}{NIOs}}
+\providecommand{\capNIO}{abc}
+\renewcommand{\capNIO}
+  {\addtocounter{hphniocounter}{1}\ifthenelse{\equal{\thehphniocounter}{1}}{Natural ionization orbital (NIO)}{NIO}}
+\providecommand{\capNIOs}{abc}
+\renewcommand{\capNIOs}
+  {\addtocounter{hphniocounter}{1}\ifthenelse{\equal{\thehphniocounter}{1}}{Natural ionization orbitals (NIOs)}{NIOs}}
+%
 %   \NO
 \newcounter{hphnocounter} \setcounter{hphnocounter}{0}
 \providecommand{\NO}{abc}
@@ -171,13 +213,22 @@
 \renewcommand{\capPESs}
   {\addtocounter{hphpescounter}{1}\ifthenelse{\equal{\thehphpescounter}{1}}{Potential energy surfaces (PESs)}{PESs}}
 %
+%   \PSCF, capPSCF
+\newcounter{hphpscfcounter} \setcounter{hphpscfcounter}{0}
+\providecommand{\PSCF}{abc}
+\renewcommand{\PSCF}
+  {\addtocounter{hphpscfcounter}{1}\addtocounter{hphscfcounter}{1}\ifthenelse{\equal{\thehphscfcounter}{1}}{post-self\textendash{}consistent field (post-SCF)}{post-SCF}}
+\providecommand{\capPSCF}{abc}
+\renewcommand{\capPSCF}
+  {\addtocounter{hphpscfcounter}{1}\addtocounter{hphscfcounter}{1}\ifthenelse{\equal{\thehphscfcounter}{1}}{Post-self\textendash{}consistent field (Post-SCF)}{Post-SCF}}
+%
 %   \RPH
 \newcounter{hphrphcounter} \setcounter{hphrphcounter}{0}
 \providecommand{\RPH}{abc}
 \renewcommand{\RPH}
   {\addtocounter{hphrphcounter}{1}\ifthenelse{\equal{\thehphrphcounter}{1}}{Reaction Path Hamiltonian (RPH)}{RPH}}
 %
-%   \SCF
+%   \SCF, \capSCF
 \newcounter{hphscfcounter} \setcounter{hphscfcounter}{0}
 \providecommand{\SCF}{abc}
 \renewcommand{\SCF}
