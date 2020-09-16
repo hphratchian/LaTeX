@@ -20,10 +20,10 @@
 %                 \bra
 %                 \ket
 %                 \expect
-%                 \braket
+%                 \braket, \bracket
 %                 \ketbra
 %                 \braketdoubar
-%                 \braketop
+%                 \braketop, \bracketop
 %                 \spatialbraketop
 %                 \eri
 %                 \eridoubar
@@ -93,13 +93,18 @@
     {\left\langle #1 \right\rangle}%
   }
 
-\providecommand{\braket}{abc}
-\renewcommand{\braket}[2]
+\providecommand{\bracket}{abc}
+\renewcommand{\bracket}[2]
   {\ensuremath
     {\left\langle { #1 }
       \mathrel{\left | {\vphantom { #1 #2 }}
       \right. \kern-\nulldelimiterspace}
       { #2 } \right\rangle}%
+  }
+
+\providecommand{\braket}{abc}
+\renewcommand{\braket}[2]
+  {\bracket{#1}{#2}%
   }
 
 \providecommand{\ketbra}{abc}
@@ -120,13 +125,18 @@
       { #2 } \right\rangle}%
   }
 
-\providecommand{\braketop}{abc}
-\renewcommand{\braketop}[3]
+\providecommand{\bracketop}{abc}
+\renewcommand{\bracketop}[3]
   {\ensuremath
     {\left\langle { #1 }
       \mathrel{\left | {\vphantom { #1 #2 #3 }} #2
       \right| \kern-\nulldelimiterspace}
       { #3 } \right\rangle}%
+  }
+
+\providecommand{\braketop}{abc}
+\renewcommand{\braketop}[3]
+  {\bracketop{#1}{#2}{#3}%
   }
 
 \providecommand{\spatialbraketop}{abc}

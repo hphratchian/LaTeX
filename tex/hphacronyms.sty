@@ -20,19 +20,27 @@
 %           \GHF      -- Generalized Hartree-Fock
 %           \HDE      -- Heisenberg Double Exchange
 %           \HF       -- Hartree-Fock
+%           \IMOM     -- initial maximum overlap method; \IMOMs, \capIMOM,
+%                        and \capIMOMs also available
 %           \IRC      -- intrinsic reaction coordinate; \capIRC is also available
+%           \KS       -- Kohn-Sham
 %           \MCSD     -- Merced City School District
 %           \MO       -- molecular orbital; \MOs is also available
+%           \MOM      -- initial maximum overlap method; \MOMs, \capMOM,
+%                        and \capMOMs also available
 %           \MLCT     -- metal to ligand charge transfer; \capMLCT is also available
 %           \MPTwo    -- second-order Moller-Plesset perturbation theory
 %           \NIO      -- natural ionization orbital; \NIOs, \capNIO, and \capNIOs are also available
 %           \NO       -- natural orbital; \NOs is also available
 %           \PE       -- photoelectron; \catPE is also available
 %           \PES      -- potential energy surface; \PESs, \cat PES, and \capPESs also available
+%           \PIMOM    -- projector initial maximum overlap method; \PIMOMs,
+%                        \capPIMOM, and \capPIMOMs also available
 %           \PSCF     -- post-self-consistent field; \capPSCF is also available
 %           \SCF      -- self-consistent field; \capSCF is also available
 %           \SCO      -- spin crossover; \capSCO is also available
 %           \RPH      -- Reaction Path Hamiltonian
+%           \TDDFT    -- time-dependent DFT; capTDDFT is also available
 %           \UCM      -- University of California, Merced
 %           \URVA     -- Unified Reaction Valley Approach
 %
@@ -121,6 +129,21 @@
 \renewcommand{\HF}
   {\addtocounter{hphhfcounter}{1}\ifthenelse{\equal{\thehphhfcounter}{1}}{Hartree\textendash Fock (HF)}{HF}}
 %
+%   \IMOM, \IMOMs, \capIMOM, \capIMOMs
+\newcounter{hphimomcounter} \setcounter{hphimomcounter}{0}
+\providecommand{\IMOM}{abc}
+\renewcommand{\IMOM}
+  {\addtocounter{hphimomcounter}{1}\ifthenelse{\equal{\thehphimomcounter}{1}}{initial maximum overlap method (IMOM)}{IMOM}}
+\providecommand{\IMOMs}{abc}
+\renewcommand{\IMOMs}
+  {\addtocounter{hphimomcounter}{1}\ifthenelse{\equal{\thehphimomcounter}{1}}{initial maximum overlap methods (IMOMs)}{IMOMs}}
+\providecommand{\capIMOM}{abc}
+\renewcommand{\capIMOM}
+  {\addtocounter{hphimomcounter}{1}\ifthenelse{\equal{\thehphimomcounter}{1}}{Initial maximum overlap method (IMOM)}{IMOM}}
+\providecommand{\capIMOMs}{abc}
+\renewcommand{\capIMOMs}
+  {\addtocounter{hphimomcounter}{1}\ifthenelse{\equal{\thehphimomcounter}{1}}{Initial maximum overlap methods (IMOMs)}{IMOMs}}
+%
 %   \IRC
 \newcounter{hphirccounter} \setcounter{hphirccounter}{0}
 \providecommand{\IRC}{abc}
@@ -129,6 +152,12 @@
 \providecommand{\capIRC}{abc}
 \renewcommand{\capIRC}
   {\addtocounter{hphirccounter}{1}\ifthenelse{\equal{\thehphirccounter}{1}}{Intrinsic reaction coordinate (IRC)}{IRC}}
+%
+%   \KS
+\newcounter{hphkscounter} \setcounter{hphkscounter}{0}
+\providecommand{\KS}{abc}
+\renewcommand{\KS}
+  {\addtocounter{hphkscounter}{1}\ifthenelse{\equal{\thehphkscounter}{1}}{Kohn-Sham (KS)}{KS}}
 %
 %   \MCSD
 \newcounter{hphmcsdcounter} \setcounter{hphmcsdcounter}{0}
@@ -146,6 +175,21 @@
 \renewcommand{\MOs}
   {\addtocounter{hphmocounter}{1}\ifthenelse{\equal{\thehphmocounter}{1}}{molecular
   orbitals (MOs)}{MOs}}
+%
+%   \MOM, \MOMs, \capMOM, \capMOMs
+\newcounter{hphmomcounter} \setcounter{hphmomcounter}{0}
+\providecommand{\MOM}{abc}
+\renewcommand{\MOM}
+  {\addtocounter{hphmomcounter}{1}\ifthenelse{\equal{\thehphmomcounter}{1}}{maximum overlap method (MOM)}{MOM}}
+\providecommand{\MOMs}{abc}
+\renewcommand{\MOMs}
+  {\addtocounter{hphmomcounter}{1}\ifthenelse{\equal{\thehphmomcounter}{1}}{maximum overlap methods (MOMs)}{MOMs}}
+\providecommand{\capMOM}{abc}
+\renewcommand{\capMOM}
+  {\addtocounter{hphmomcounter}{1}\ifthenelse{\equal{\thehphmomcounter}{1}}{Maximum overlap method (MOM)}{MOM}}
+\providecommand{\capMOMs}{abc}
+\renewcommand{\capMOMs}
+  {\addtocounter{hphmomcounter}{1}\ifthenelse{\equal{\thehphmomcounter}{1}}{Maximum overlap methods (MOMs)}{MOMs}}
 %
 %   \MLCT, \capMLCT
 \newcounter{hphmlctcounter} \setcounter{hphmlctcounter}{0}
@@ -213,6 +257,21 @@
 \renewcommand{\capPESs}
   {\addtocounter{hphpescounter}{1}\ifthenelse{\equal{\thehphpescounter}{1}}{Potential energy surfaces (PESs)}{PESs}}
 %
+%   \PIMOM, \PIMOMs
+\newcounter{hphpimomcounter} \setcounter{hphpimomcounter}{0}
+\providecommand{\PIMOM}{abc}
+\renewcommand{\PIMOM}
+  {\addtocounter{hphpimomcounter}{1}\ifthenelse{\equal{\thehphpimomcounter}{1}}{projection initial maximum overlap method (pimom)}{pimom}}
+\providecommand{\PIMOMs}{abc}
+\renewcommand{\PIMOMs}
+  {\addtocounter{hphpimomcounter}{1}\ifthenelse{\equal{\thehphpimomcounter}{1}}{projection initial maximum overlap methods (pimoms)}{pimoms}}
+\providecommand{\capPIMOM}{abc}
+\renewcommand{\capPIMOM}
+  {\addtocounter{hphpimomcounter}{1}\ifthenelse{\equal{\thehphpimomcounter}{1}}{Projection initial maximum overlap method (pimom)}{pimom}}
+\providecommand{\capPIMOMs}{abc}
+\renewcommand{\capPIMOMs}
+  {\addtocounter{hphpimomcounter}{1}\ifthenelse{\equal{\thehphpimomcounter}{1}}{Projection initial maximum overlap methods (pimoms)}{pimoms}}
+%
 %   \PSCF, capPSCF
 \newcounter{hphpscfcounter} \setcounter{hphpscfcounter}{0}
 \providecommand{\PSCF}{abc}
@@ -245,6 +304,19 @@
 \providecommand{\capSCO}{abc}
 \renewcommand{\capSCO}
   {\addtocounter{hphscocounter}{1}\ifthenelse{\equal{\thehphscocounter}{1}}{Spin crossover (SCO)}{SCO}}
+%
+%   \TDDFT, \capTDDFT
+\newcounter{hphtddftcounter} \setcounter{hphtddftcounter}{0}
+\providecommand{\TDDFT}{abc}
+\renewcommand{\TDDFT}
+  {\addtocounter{hphtddftcounter}{1}\addtocounter{hphdftcounter}{1}\ifthenelse{
+    \equal{\thehphtddftcounter}{1} \OR
+    \equal{\thehphdftcounter}{1}}{time dependent Density Functional Theory (TD-DFT)}{TD-DFT}}
+\providecommand{\capTDDFT}{abc}
+\renewcommand{\capTDDFT}
+  {\addtocounter{hphtddftcounter}{1}\addtocounter{hphdftcounter}{1}\ifthenelse{
+    \equal{\thehphtddftcounter}{1} \OR
+    \equal{\thehphdftcounter}{1}}{Time dependent Density Functional Theory (TD-DFT)}{TD-DFT}}
 %
 %   \UCM
 \newcounter{hphucmcounter} \setcounter{hphucmcounter}{0}
