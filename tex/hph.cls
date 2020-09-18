@@ -42,6 +42,11 @@
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
+\newboolean{HPHHW@Hyphens}
+\setboolean{HPHHW@Hyphens}{false}
+\DeclareOption{hyphens}{
+  \setboolean{HPHHW@Hyphens}{true}
+}
 \newboolean{HPHHW@DueDateEndOfClass}
 \setboolean{HPHHW@DueDateEndOfClass}{true}
 \newboolean{HPHHW@DueDateMidnight}
@@ -237,7 +242,9 @@
 % Set the text and turn hyphenation off.
 %
 \renewcommand{\familydefault}{\sfdefault}
-\RequirePackage[none]{hyphenat}
+\ifthenelse{\boolean{HPHHW@Hyphens}}
+  {\RequirePackage{hyphenat}}
+  {\RequirePackage[none]{hyphenat}}
 %
 %
 % Set margin widths.
