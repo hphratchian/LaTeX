@@ -1,9 +1,36 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{hph}[2020/08/09 A class file for documents written in the Hratchian Group at UC Merced.]
+\ProvidesClass{hph}[2020/12/29 A class file for documents written in the Hratchian Group at UC Merced.]
 \LoadClass[11pt]{report}
+%
 %
 % This LaTeX class file provides a number of format options and tools used
 % in the Hratchian Group at the University of California, Merced.
+%
+% The class includes a number of options. One set of options defines a type
+% of document supported by the class and others are general to two or more
+% of the key documents types. The options that define document type
+% include:
+%    notes
+%    problemset
+%    homework
+%    inclassex
+%    genericassignment
+%    quiz
+%    exam
+%    midtermexam
+%    finalexam
+%
+% General class options include:
+%    hyphens
+%    dueendofclass
+%    duemidnight
+%    noduedate
+%    nodate
+%    solutions
+%    blanksolutions
+%    noblanksolutions
+%    points
+%    chapters
 %
 %
 %
@@ -42,6 +69,11 @@
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
+\newboolean{HPH@UseChapters}
+\setboolean{HPH@UseChapters}{false}
+\DeclareOption{chapters}{
+  \setboolean{HPH@UseChapters}{true}
+}
 \newboolean{HPHHW@Hyphens}
 \setboolean{HPHHW@Hyphens}{false}
 \DeclareOption{hyphens}{
@@ -226,6 +258,7 @@
   \renewcommand{\HPHHW@ActivityType}{Notes}
   \renewcommand{\HPHHW@ActivityTitle}{Notes}
 }
+\DeclareOption*{\ClassError{hph}{Unknown option: \CurrentOption{}}{Only use known options.}}
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -588,182 +621,20 @@
   {{\color{blue}\boxed{#1}}}{#1}
 }
 
-%hph+
-%%
-%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%
-%%%  Section 8. Macros for convenient typesetting...these
-%%%             are mostly for quantum mechanics/chemistry
-%%%             symbols, etc. The list of available macros
-%%%             includes:
-%%%                 \lceil,\rceil
-%%%                 \lfloor,\rfloor
-%%%                 \sgn
-%%%                 \negsign
-%%%                 \EE{N}       This gives \times{}10^{N}
-%%%                 \degree
-%%%                 \updownarrow
-%%%                 \commutator
-%%%                 \anticommutator
-%%%                 \deter
-%%%                 \bra
-%%%                 \ket
-%%%                 \expect
-%%%                 \braket
-%%%                 \ketbra
-%%%                 \braketdoubar
-%%%                 \braketop
-%%%                 \spatialbraketop
-%%%                 \eri
-%%%                 \eridoubar
-%%%                 \orb
-%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%
-%\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
-%
-%\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
-%
-%\DeclareMathOperator{\sgn}{sgn}
-%
-%\newcommand{\negsign}{
-%  {\ensuremath
-%    {\scalebox{1.25}[1.2]{-}}
-%  }
-%}
-%
-%\newcommand{\EE}[1]{
-%  {\ensuremath
-%    {\times{}10^{#1}}
-%  }
-%}
-%
-%\providecommand{\degree}{\ensuremath{^\circ}}
-%
-%\providecommand{\updownarrow}{abc}
-%\renewcommand{\updownarrow}
-%  {\ensuremath
-%    {\uparrow\downarrow}%
-%  }
-%
-%\providecommand{\commutator}{abc}
-%\renewcommand{\commutator}[2]
-%  {\ensuremath
-%    {\left[ #1,#2 \right]}%
-%  }
-%
-%\providecommand{\anticommutator}{abc}
-%\renewcommand{\anticommutator}[2]
-%  {\ensuremath
-%    {\left\{ #1,#2 \right\}}%
-%  }
-%
-%\providecommand{\deter}{abc}
-%\renewcommand{\deter}[1]
-%  {\ensuremath
-%    {\left| #1 \right|}%
-%  }
-%
-%\providecommand{\bra}{abc}
-%\renewcommand{\bra}[1]
-%  {\ensuremath
-%    {\left\langle #1 \right|}%
-%  }
-%
-%\providecommand{\ket}{abc}
-%\renewcommand{\ket}[1]
-%  {\ensuremath
-%    {\left| #1 \right\rangle}%
-%  }
-%
-%\providecommand{\expect}{abc}
-%\renewcommand{\expect}[1]
-%  {\ensuremath
-%    {\left\langle #1 \right\rangle}%
-%  }
-%
-%\providecommand{\braket}{abc}
-%\renewcommand{\braket}[2]
-%  {\ensuremath
-%    {\left\langle { #1 }
-%      \mathrel{\left | {\vphantom { #1 #2 }}
-%      \right. \kern-\nulldelimiterspace}
-%      { #2 } \right\rangle}%
-%  }
-%
-%\providecommand{\ketbra}{abc}
-%\renewcommand{\ketbra}[2]
-%  {\ensuremath
-%    {\left| { #1 }
-%      \mathrel{\left\rangle {\vphantom { #1 #2 }}
-%      \right\langle \kern-\nulldelimiterspace}
-%      { #2 } \right|}%
-%  }
-%
-%\providecommand{\braketdoubar}{abc}
-%\renewcommand{\braketdoubar}[2]
-%  {\ensuremath
-%    {\left\langle { #1 }
-%      \mathrel{\left | {\vphantom { #1 #2 }}
-%      \right| \kern-\nulldelimiterspace}
-%      { #2 } \right\rangle}%
-%  }
-%
-%\providecommand{\braketop}{abc}
-%\renewcommand{\braketop}[3]
-%  {\ensuremath
-%    {\left\langle { #1 }
-%      \mathrel{\left | {\vphantom { #1 #2 #3 }} #2
-%      \right| \kern-\nulldelimiterspace}
-%      { #3 } \right\rangle}%
-%  }
-%
-%\providecommand{\spatialbraketop}{abc}
-%\renewcommand{\spatialbraketop}[3]
-%  {\ensuremath
-%    {\left( { #1 }
-%      \mathrel{\left | {\vphantom { #1 #2 #3 }} #2
-%      \right| \kern-\nulldelimiterspace}
-%      { #3 } \right)}%
-%  }
-%
-%\providecommand{\eri}{abc}
-%\renewcommand{\eri}[2]
-%  {\ensuremath
-%    {\left( { #1 }
-%      \mathrel{\left | {\vphantom { #1 #2 }}
-%      \right. \kern-\nulldelimiterspace}
-%      { #2 } \right)}%
-%  }
-%
-%\providecommand{\eridoubar}{abc}
-%\renewcommand{\eridoubar}[2]
-%  {\ensuremath
-%    {\left( { #1 }
-%      \mathrel{\left | {\vphantom { #1 #2 }}
-%      \right| \kern-\nulldelimiterspace}
-%      { #2 } \right)}%
-%  }
-%
-%\providecommand{\orb}{abc}
-%\renewcommand{\orb}[3]
-%  {\ensuremath
-%    {#1_{#2}\left(#3\right)}
-%  }
-%hph-
-
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
-%%  Section 9. Macros and settings for section headers and other general
+%%  Section 8. Macros and settings for section headers and other general
 %%             typesetting options.
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % Set section heading formatting.
 %
+\ifthenelse{\NOT\boolean{HPH@UseChapters}}{
+  \renewcommand{\thesection}{\arabic{section}}
+}{}
 \titleformat{\section}{\sffamily\normalsize\scshape\bfseries}{\thesection.}{0.2em}{}
 \titlespacing{\section}{0pt}{7mm}{1mm}
 \titleformat{\subsection}{\normalsize\bfseries}{}{0.2em}{}
