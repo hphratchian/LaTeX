@@ -51,7 +51,7 @@
 \RequirePackage[margin=1.0in]{geometry}
 \RequirePackage{fancyhdr}
 \RequirePackage{helvet}
-\RequirePackage{layouts}
+%hph \RequirePackage{layouts}
 \RequirePackage{upgreek,amsmath,amsthm,amssymb,mathrsfs,xfrac,mathtools,dsfont}
 \RequirePackage{parskip}
 \RequirePackage[compact,medium]{titlesec}
@@ -280,10 +280,11 @@
   {\RequirePackage[none]{hyphenat}}
 %
 %
-% Set margin widths.
+% Set margin widths and header heights.
 %
 \oddsidemargin 0.0 in
 \evensidemargin 0.0 in
+\setlength{\headheight}{14pt}
 %
 %
 % Set-up macros and commands for header and title fields.
