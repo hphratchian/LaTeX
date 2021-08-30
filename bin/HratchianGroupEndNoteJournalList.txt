@@ -6,6 +6,7 @@ Accounts of Chemical Research	Acc. Chem. Res.	Acc Chem Res
 ACH - Models in Chemistry	ACH - Models Chem.	ACH - Models Chem
 ACI Materials Journal	ACI Mater. J.	ACI Mater J
 ACS Applied Materials & Interfaces
+ACS Chemical Biology	ACS Chem. Biol.	ACS Chem Biol
 ACS Symposium Series	ACS Symp. Ser.	ACS Symp Ser
 Acta Biochimica Polonica	Acta Biochim. Pol.	Acta Biochim Pol
 Acta Biotechnologica	Acta Biotechnol.	Acta Biotechnol
@@ -35,6 +36,7 @@ Adhesives Age	Adhes. Age	Adhes Age
 Adsorption Science and Technology	Adsorpt. Sci. Technol.	Adsorpt Sci Technol
 Advanced Composite Materials	Adv. Compos. Mater	Adv Compos Mater
 Advanced Engineering Materials	Adv. Eng. Mater.	Adv Eng Mater
+Advanced Drug Delivery Reviews	Adv. Drug Delivery Rev.	Adv Drug Delivery Rev
 Advanced Functional Materials	Adv. Funct. Mater.	Adv Funct Mater
 Advanced Materials and Processes	Adv. Mater. Processes	Adv Mater Processes
 Advanced Materials for Optics and Electronics	Adv. Mater. Opt. Electron.	Adv Mater Opt Electron
@@ -86,11 +88,15 @@ Analytical Chemistry	Anal. Chem.	Anal Chem
 Analytical Communications	Anal. Commun.	Anal Commun
 Analytical Letters	Anal. Lett.	Anal Lett
 Analytical Sciences	Anal. Sci.	Anal Sci
-Angewandte Chemie International Edition	Angew. Chem. Int. Ed.	Angew Chem Int Ed
 Angewandte Chemie	Angew. Chem.	Angew Chem
+Angewandte Chemie International Edition	Angew. Chem. Int. Ed.	Angew Chem Int Ed
+Angewandte Chemie International Edition	Angew. Chem. Int. Ed.	Angew Chem Int Edit
+Angewandte Chemie International Edition	Angew. Chem. Int. Ed.	Angew Chem Int Edit.
+Angewandte Chemie, International Edition	Angew. Chem. Int. Ed.	Angew Chem, Int Ed
+Angewandte Chemie, International Edition	Angew. Chem. Int. Ed.	Angew Chem, Int Edit
+Angewandte Chemie, International Edition	Angew. Chem. Int. Ed.	Angew Chem, Int Edit.
 Angewandte Chemie, International Edition in English	Angew. Chem. Int. Ed.	Angew Chem Int Ed
-Angewandte Chemie, International Edition in English	Angew. Chem. Int. Ed. Engl.	Angew Chem Int Ed Engl
-Angewandte Chemie, International Edition	Angew. Chem. Int. Ed.	Angew Chem Int Ed
+Angewandte Chemie, International Edition in English	Angew. Chem. Int. Ed.	Angew Chem Int Ed Engl
 Angewandte Makromolekulare Chemie	Angew. Makromol. Chem.	Angew Makromol Chem
 Annales de Chimie - Science des Materiaux	Ann. Chim. - Sci. Mat.	Ann Chim - Sci Mat
 Annali di Chimica	Anal. Chim.	Anal Chim
@@ -147,7 +153,7 @@ Archives of Pharmacal Research	Arch. Pharmacal Res.	Arch Pharmacal Res
 Archives of Physiology and Biochemistry	Arch. Physiol. Biochem.	Arch Physiol Biochem
 Archives of Toxicology	Arch. Toxicol.	Arch Toxicol
 Archives of Virology	Arch. Virol	Arch Virol
-Artificial Cells Blood Substitutes and Immobilization Biotechnology	Artif Cells, Blood Substitues, Immobilization Biotechnol.	Artif Cells, Blood Substitues, Immobilization Biotechnol
+Artificial Cells Blood Substitutes and Immobilization Biotechnology	Artif Cells, Blood Substitues, Immobilization Biotechnol.	Artif Cells, Blood Substitues, Immobilization Biotechnol
 Arzneimittel-Forschung/Drug Research	Arzneim.-Forsch.	Arzneim-Forsch
 Asian Journal of Chemistry	Asian J. Chem.	Asian J Chem
 Asian Journal of Spectroscopy	Asian J. Spectro.	Asian J Spectro
@@ -305,8 +311,11 @@ Chemische Technik	Chem. Tech. (Leipzig)	Chem Tech (Leipzig)
 Chemistry - A European Journal	Chem. Eur. J.	Chem Eur J
 Chemistry- A European Journal	Chem. Eur. J.	Chem Eur J
 Chemistry-A European Journal	Chem. Eur. J.	Chem Eur J
-Computers & Chemistry	Comput. Chem.	Comput Chem
-Computers & Chemistry (Oxford, United Kingdom)	Comput. Chem. (Oxford, U. K.)	Comput Chem (Oxford, U K)
+Chemistry - An Asian Journal	Chem. - Asian J.	Chem - Asian J
+Chemistry-An Asian Journal	Chem. - Asian J.	Chem-Asian J
+Chemistry-An Asian Journal	Chem. - Asian J.	Chem.-Asian J.
+Chemistry & Biology	Chem. Biol.	Chem Biol
+Chemistry \& Biology	Chem. Biol.	Chem Biol
 Chemistry and Industry	Chem. Ind. (London)	Chem Ind (London)
 Chemistry and Physics of Carbon	Chem. Phys. Carbon	Chem Phys Carbon
 Chemistry and Physics of Lipids	Chem. Phys. Lipids	Chem Phys Lipids
@@ -366,6 +375,8 @@ Computational and Theoretical Polymer Science	Comput. Theor. Polym. Sci.	Comput 
 Computer Physics Communications	Comput. Phys. Commun.	Comput Phys Commun
 Computer Physics Reports	Comput. Phys. Rep.	Comput Phys Rep
 Computers and Chemical Engineering	Comput. Chem. Eng.	Comput Chem Eng
+Computers & Chemistry	Comput. Chem.	Comput Chem
+Computers & Chemistry (Oxford, United Kingdom)	Comput. Chem. (Oxford, U. K.)	Comput Chem (Oxford, U K)
 Computers and Chemistry	Comput. Chem. (Oxford)	Comput Chem (Oxford)
 Concepts in Magenetic Resonance	Concepts Magn. Reson.	Concepts Magn Reson
 Concrete Engineering International	Concr. Eng. Int.	Concr Eng Int
@@ -548,12 +559,13 @@ Indian Journal of Chemistry Section A: Inorganic, Bio-inorganic, Physical, Theor
 Indian Journal of Chemistry Section B: Organic Chemistry including Medicinal Chemistry	Indian J. Chem., Sect B	Indian J Chem, Sect B
 Indian Journal of Engineering and Materials Science	Indian J. Eng. Mater. Sci.	Indian J Eng Mater Sci
 Indian Journal of Heterocyclic Chemistry	Indian J. Heterocycl. Chem.	Indian J Heterocycl Chem
-Indian Journal of Pure and Applied Physics	Indian J. Pure Appl. Phy.	Indian J Pure Appl Phy
+Indian Journal of Pure and Applied Physics	Indian J. Pure Appl. Phys.	Indian J Pure Appl Phys
 Indian Journal of Technology	Indian J. Technol.	Indian J Technol
 Industrial and Engineering Chemistry	Ind. Eng. Chem.	Ind Eng Chem
 Industrial and Engineering Chemistry Fundamentals	Ind. Eng. Chem. Fundam.	Ind Eng Chem Fundam
 Industrial and Engineering Chemistry Research	Ind. Eng. Chem. Res.	Ind Eng Chem Res
 Industrial Diamond Review	Ind. Diamond Rev.	Ind Diamond Rev
+Inflammation and Cell Signaling	Inflammation Cell Signaling	Inflammation Cell Signaling
 Infrared Physics and Technology	Infrared Phys. Technol.	Infrared Phys Technol
 Ingeniera Quimica (Madrid)	Ing. Quim.	Ing Quim
 Inorganic Chemistry	Inorg. Chem.	Inorg Chem
@@ -969,6 +981,7 @@ Macromolecular Chemistry and Physics	Macromol. Chem. Phys.	Macromol Chem Phys
 Macromolecular Rapid Communications	Macromol. Rapid Commun.	Macromol Rapid Commun
 Macromolecular Symposium	Macromol. Symp.	Macromol Symp
 Macromolecular Theory and Simulations	Macromol. Theory Simul.	Macromol Theory Simul
+Macromolecules	Macromolecules	Macromolecules
 Magnetic Resonance in Chemistry	Magn. Reson. Chem.	Magn Reson Chem
 Magnetic Resonance Materials in Physics, Biology and Medicine	Magn. Reson. Mater. Phys., Biol. Med.	Magn Reson Mater Phys, Biol Med
 Magyar Kemiai Folyoirat Magy. Kem. Foly.	Magy Kem Foly
@@ -1015,6 +1028,7 @@ Mechanics of Composite Materials	Mech. Compos. Mater.	Mech Compos Mater
 Mechanics of Composite Materials and Structures	Mech. Compos. Mater. Struct.	Mech Compos Mater Struct
 Mechanics of Materials	Mech. Mater.	Mech Mater
 Mechanics of Time Dependent Materials	Mech. Time-Depend. Mater.	Mech Time-Depend Mater
+Medicinal Research Reviews	Med. Res. Rev.	Med Res Rev
 Medicinal Chemistry Research	Med. Chem. Res.	Med Chem Res
 Mendeleev Communications	Mendeleev Commun.	Mendeleev Commun
 Metabolic Engineering	Metab. Eng.	Metab Eng
@@ -1079,6 +1093,7 @@ Natural Products Reports	Nat. Prod. Rep.	Nat Prod Rep
 Natural Structural Biology	Nat. Struct. Biol.	Nat Struct Biol
 Natural Toxins	Nat. Toxins	Nat Toxins
 Nature Biotechnology	Nat. Biotechnol.	Nat Biotechnol
+Nature Chemical Biology	Nat. Chem. Biol.	Nat Chem Biol
 Nature Communications	Nat. Commun.	Nat Commun
 Nature materials	Nat. Mater.	Nat Mater
 Naunyn-Schmiedeberg's Archives of Pharmacology	Naunyn-Schmiedeberg's Arch. Pharmacol.	Naunyn-Schmiedeberg's Arch Pharmacol
@@ -1128,17 +1143,19 @@ Organic Synthesis Highlights V
 Organic Synthesis via Organometallics, Proceedings of the Symposium, 5th, Heidelberg, Sept. 26-28, 1996		
 Organohalogen Compounds	Organohalogen Compd.	Organohalogen Compd
 Organometallic Chemistry	Organomet. Chem.	Organomet Chem
+Organometallics	Organometallics	Organometallics
 Origins of Life and Evolution of the Biosphere	Origins Life Evol. Biosphere	Origins Life Evol Biosphere
 Oxidation of Metals	Oxid. Met.	Oxid Met
 Ozone Science and Engineering	Ozone Sci. Eng.	Ozone Sci Eng
 Particle and Particle Systems Characterization	Part. Part. Syst. Char.	Part Part Syst Char
-Particulate Science and echnology	Part. Sci. Technol.	Part Sci Technol
+Particulate Science and Fechnology	Part. Sci. Technol.	Part Sci Technol
 Peptides 2000, Proceedings of the European Peptide Symposium, 26th, Montpellier, France, Sept. 10-15, 2000		
 Peptides 2002, Proceedings of the European Peptide Symposium, 27th, Sorrento, Italy, Aug. 31-Sept. 6, 2002		
 Perspectives in Drug Discovery and Design	Perspect. Drug Discovery Des.	Perspect Drug Discovery Des
 Pesticide Biochemistry and Physiology	Pestic. Biochem. Physiol.	Pestic Biochem Physiol
 Pesticide Outlook	Pestic. Outlook	Pestic Outlook
 Petroleum Science and Technology	Pet. Sci. Technol.	Pet Sci Technol
+Pharmaceutical Patent Analyst	Pharm. Pat. Anal.	Pharm Pat Anal
 Pharmaceutical and Pharmacological Letters	Pharm. Pharmacol. Lett.	Pharm Pharmacol Lett
 Pharmaceutical Chemistry Journal	Pharm. Chem. J.	Pharm Chem J
 Pharmaceutical Research	Pharm. Res.	Pharm Res
@@ -1228,7 +1245,7 @@ Preprints - American Chemical Society, Division of Petroleum Chemistry	Prepr. - 
 Proceedings of SPIE	Proc. SPIE	Proc SPIE
 Proceedings of the National Academy of Sciences	Proc. Natl. Acad. Sci. U.S.A.	Proc Natl Acad Sci USA
 Proceedings of the National Academy of Sciences U.S.A	Proc. Natl. Acad. Sci. U.S.A.	Proc Natl Acad Sci USA
-Proceedings of the National Academy of Sciences of the United States of America	Proc. Natl. Acad. Sci. U. S. A.	Proc Natl Acad Sci U S A
+Proceedings of the National Academy of Sciences of the United States of America	Proc. Natl. Acad. Sci. U.S.A.	Proc Natl Acad Sci U S A
 Proceedings of the Royal Society of London Series A	Proc. R. Soc. London, Ser. A	Proc R Soc London, Ser A
 Proceedings of the Royal Society of London Series B	Proc. R. Soc. London, Ser. B	Proc R Soc London, Ser B
 Process Biochemistry	Process Biochem.	Process Biochem
@@ -1303,6 +1320,7 @@ Russian Metallurgy	Russ. Metall.	Russ Metall
 Russion Journal of Coordination Chemistry	Russ. J. Coord. Chem.	Russ J Coord Chem
 SAMPE Journal	SAMPE J.	SAMPE J
 Scandinavian Journal of Metallurgy	Scand. J. Metall.	Scand J Metall
+Science	Science	Science
 Science and Technology of Welding and Joining	Sci. Technol. Weld. Joining	Sci Technol Weld Joining
 Science in China, Series B Chemistry	Sci. China, Ser. B	Sci China, Ser B
 Science in China, Series E Technological Sciences	Sci. China, Ser. E	Sci China, Ser E
@@ -1376,7 +1394,7 @@ Topics in Catalysis	Top. Catal.	Top Catal
 Topics in Current Chemistry	Top. Curr. Chem.	Top Curr Chem
 Topics in Fluorescence Spectroscopy	Top. Fluoresc. Spectrosc.	Top Fluoresc Spectrosc
 Topics in Inorganic Chemistry	Top. Inorg. Chem.	Top Inorg Chem
-Toxicologcal and Environmental Chemistry	Toxicol. Environ. Chem.	Toxicol Environ Chem
+Toxicological and Environmental Chemistry	Toxicol. Environ. Chem.	Toxicol Environ Chem
 Toxicological Sciences	Toxicol. Sci.	Toxicol Sci
 Toxicology and Applied Pharmacology	Toxicol. Appl. Pharmacol.	Toxicol Appl Pharmacol
 Toxicology Letters	Toxicol. Lett.	Toxicol Lett

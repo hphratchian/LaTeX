@@ -130,6 +130,8 @@
       use strict;
       my($inName) = @_;
       chomp($inName);
+      $inName =~ s/\{//g;
+      $inName =~ s/\}//g;
       $inName =~ s/\(//g;
       $inName =~ s/\)//g;
       $inName =~ s/\.//g;
