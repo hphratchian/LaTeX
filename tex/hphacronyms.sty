@@ -13,6 +13,8 @@
 %           \AP       -- Approximate Projection (AP)
 %           \CAS      -- Complete Active Space
 %           \CI       -- configuration interaction
+%           \DDNO     -- difference density natural orbital; \DDNOs, \capDDNO, and \capDDNOs are
+%                        also available
 %           \deltaDFT -- delta-density-functional-theory
 %           \deltaSCF -- delta-self-consistent-field
 %           \DFT      -- Density Functional Theory
@@ -82,6 +84,21 @@
 \providecommand{\CI}{abc}
 \renewcommand{\CI}
   {\addtocounter{cicounter}{1}\ifthenelse{\equal{\thecicounter}{1}}{Configuration Interaction (CI)}{CI}}
+%
+%   \DDNO, \DDNOs, \capDDNO, \capDDNOs
+\newcounter{hphddnocounter} \setcounter{hphddnocounter}{0}
+\providecommand{\DDNO}{abc}
+\renewcommand{\DDNO}
+  {\addtocounter{hphddnocounter}{1}\ifthenelse{\equal{\thehphddnocounter}{1}}{difference density natural orbital (DDNO)}{DDNO}}
+\providecommand{\DDNOs}{abc}
+\renewcommand{\DDNOs}
+  {\addtocounter{hphddnocounter}{1}\ifthenelse{\equal{\thehphddnocounter}{1}}{difference density natural orbitals (DDNOs)}{DDNOs}}
+\providecommand{\capDDNO}{abc}
+\renewcommand{\capDDNO}
+  {\addtocounter{hphddnocounter}{1}\ifthenelse{\equal{\thehphddnocounter}{1}}{Difference density natural orbital (DDNO)}{DDNO}}
+\providecommand{\capDDNOs}{abc}
+\renewcommand{\capDDNOs}
+  {\addtocounter{hphddnocounter}{1}\ifthenelse{\equal{\thehphddnocounter}{1}}{Difference density natural orbitals (DDNOs)}{DDNOs}}
 %
 %   \deltaDFT
 \newcounter{hphdeltadftcounter} \setcounter{hphdeltadftcounter}{0}

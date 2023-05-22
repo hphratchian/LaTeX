@@ -6,6 +6,7 @@
 %           \AP    -- Approximate Projection (AP)
 %           \CAS   -- Complete Active Space
 %           \CI    -- configuration interaction
+%           \DDNO  -- difference density natrual orbitals
 %           \DFT   -- Density Functional Theory
 %           \GHF   -- Generalized Hartree-Fock
 %           \HDE   -- Heisenberg Double Exchange
@@ -63,12 +64,17 @@
 \renewcommand{\CI}
   {\addtocounter{cicounter}{1}\ifthenelse{\equal{\thecicounter}{1}}{Configuration Interaction (CI)}{CI}}
 %
+%   \DDNO
+\newcounter{ddnocounter} \setcounter{ddnocounter}{0}
+\providecommand{\DDNO}{abc}
+\renewcommand{\DDNO}
+  {\addtocounter{ddnocounter}{1}\ifthenelse{\equal{\theddnocounter}{1}}{Difference density natural orbital (DDNO)}{DDNO}}
+%
 %   \DFT
 \newcounter{hphdftcounter} \setcounter{hphdftcounter}{0}
 \providecommand{\DFT}{abc}
 \renewcommand{\DFT}
-  {\addtocounter{hphdftcounter}{1}\ifthenelse{\equal{\thehphdftcounter}{1}}{Density
-  Functional Theory (DFT)}{DFT}}
+  {\addtocounter{hphdftcounter}{1}\ifthenelse{\equal{\thehphdftcounter}{1}}{Density Functional Theory (DFT)}{DFT}}
 %
 %   \GHF
 \newcounter{hphghfcounter} \setcounter{hphghfcounter}{0}
