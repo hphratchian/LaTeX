@@ -347,6 +347,10 @@
   \renewcommand{\HPHHW@ActivityType}{#1}
 }
 %
+%   Set up things for the bibliography.
+\renewcommand{\bibname}{References}
+\patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
+%
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
