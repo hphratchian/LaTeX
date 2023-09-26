@@ -289,6 +289,7 @@ Chemical Geology	Chem. Geol.	Chem Geol
 Chemical Papers - Chemicke Zvesti	Chem. Pap. - Chem. Zvesti	Chem Pap - Chem Zvesti
 Chemical Physics	Chem. Phys.	Chem Phys
 Chemical Physics Letters	Chem. Phys. Lett.	Chem Phys Lett
+Chemical Physics Reviews	Chem. Phys. Rev.	Chem Phys Rev
 Chemical Processing	Chem. Process.	Chem Process
 Chemical Research in Toxicology	Chem. Res. Toxicol.	Chem Res Toxicol
 Chemical Reviews	Chem. Rev.	Chem Rev
@@ -881,6 +882,7 @@ The Journal of Prosthetic Dentistry	J. Prosthet. Dent.	J Prosthet Dent
 Journal of Protein Chemistry    J. Protein Chem.	J Protein Chem
 Journal of Pulp and Paper Science	J. Pulp Pap. Sci.	J Pulp Pap Sci
 Journal of Quantitative Spectroscopy and Radiative Transfer	J. Quant. Spectrosc. Radiat. Transfer	J Quant Spectrosc Radiat Transfer
+J. Quant. Spectrosc. Radiat. Transf.	J. Quant. Spectrosc. Radiat. Transfer	J Quant Spectrosc Radiat Transfer
 Journal of Radioanalytical and Nuclear Chemistry	J. Radioanal. Nucl. Chem.	J Radioanal Nucl Chem
 Journal of Radioanalytical and Nuclear Chemistry Articles	J. Radioanal. Nucl. Chem. Art.	J Radioanal Nucl Chem Art
 Journal of Radioanalytical and Nuclear Chemistry Letters	J. Radioanal. Nucl. Chem. Lett.	J Radioanal Nucl Chem Lett
@@ -1423,6 +1425,7 @@ Water Resources Research	Water Resour. Res.	Water Resour Res
 Water Science and Technology	Water Sci. Technol.	Water Sci Technol
 Water, Air, and Soil Pollution	Water, Air, Soil Pollut.	Water, Air, Soil Pollut
 Wiley Interdisciplinary Reviews: Computational Molecular Science	Wiley Interdiscip. Rev.: Comput. Mol. Sci.	Wiley Interdiscip Rev: Comput. Mol Sci
+WIREs Comput. Mol. Sci.	Wiley Interdiscip. Rev.: Comput. Mol. Sci.	Wiley Interdiscip Rev: Comput. Mol Sci
 World Journal of Microbiology and Biotechnology	World J. Microbiol. Biotechnol.	World J Microbiol Biotechnol
 X-Ray Spectrometry	X-Ray Spectrom.	X-Ray Spectrom
 Zeitschrift fur Anorganische und Allgemeine Chemie	Z. Anorg. Allg. Chem.	Z Anorg Allg Chem

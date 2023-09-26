@@ -34,6 +34,7 @@
 %           \MPTwo    -- second-order Moller-Plesset perturbation theory
 %           \NIO      -- natural ionization orbital; \NIOs, \capNIO, and \capNIOs are also available
 %           \NO       -- natural orbital; \NOs is also available
+%           \NTO      -- natural transition orbital; \NTOs is also available
 %           \PE       -- photoelectron; \catPE is also available
 %           \PES      -- potential energy surface; \PESs, \cat PES, and \capPESs also available
 %           \PIMOM    -- projector initial maximum overlap method; \PIMOMs,
@@ -249,6 +250,17 @@
 \renewcommand{\NOs}
   {\addtocounter{hphnocounter}{1}\ifthenelse{\equal{\thehphnocounter}{1}}{natural
   orbitals (NOs)}{NOs}}
+%
+%   \NTO, \NTOs
+\newcounter{hphntocounter} \setcounter{hphntocounter}{0}
+\providecommand{\NTO}{abc}
+\renewcommand{\NTO}
+  {\addtocounter{hphntocounter}{1}\ifthenelse{\equal{\thehphntocounter}{1}}{natural
+  transition orbital (NTO)}{NTO}}
+\providecommand{\NTOs}{abc}
+\renewcommand{\NTOs}
+  {\addtocounter{hphntocounter}{1}\ifthenelse{\equal{\thehphntocounter}{1}}{natural
+  transition orbitals (NTOs)}{NTOs}}
 %
 %   \PE
 \newcounter{hphpecounter} \setcounter{hphpecounter}{0}
