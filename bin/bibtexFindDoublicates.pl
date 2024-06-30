@@ -50,6 +50,9 @@
       }elsif(/^\s*pages\s*=\s*[\{\"](\d+)\s*-+\s*.*[\}\"],?\s*$/i){
         $currentPagesField = $1;
         if($DEBUG){print "FOUND PAGE 2  = $currentPagesField\n"};
+      }elsif(/^\s*pages\s*=\s*[\{\"](\S+)[\}\"],?\s*$/i){
+        $currentPagesField = $1;
+        if($DEBUG){print "FOUND PAGE 3  = $currentPagesField\n"};
       }
     }
     $entryTag = "$currentJournalField.$currentYearField.$currentPagesField";

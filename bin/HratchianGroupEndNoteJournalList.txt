@@ -5,8 +5,13 @@ Abstracts of Papers, 230th ACS National Meeting, Washington, DC, United States, 
 Accounts of Chemical Research	Acc. Chem. Res.	Acc Chem Res
 ACH - Models in Chemistry	ACH - Models Chem.	ACH - Models Chem
 ACI Materials Journal	ACI Mater. J.	ACI Mater J
-ACS Applied Materials & Interfaces
+ACS Applied Materials & Interfaces	ACS Appl. Mater. Interfaces	ACS Appl Mater Interfaces
+ACS Applied Materials \& Interfaces	ACS Appl. Mater. Interfaces	ACS Appl Mater Interfaces
+ACS Applied Nano Materials	ACS Appl. Nano Mater.	ACS Appl Nano Mater
 ACS Chemical Biology	ACS Chem. Biol.	ACS Chem Biol
+ACS ES&T Water	ACS ES\&T Water	ACS ES\&T Water
+ACS ES\&T Water	ACS ES\&T Water	ACS ES\&T Water
+ACS Sensors	ACS Sens.	ACS Sens
 ACS Symposium Series	ACS Symp. Ser.	ACS Symp Ser
 Acta Biochimica Polonica	Acta Biochim. Pol.	Acta Biochim Pol
 Acta Biotechnologica	Acta Biotechnol.	Acta Biotechnol
@@ -43,6 +48,7 @@ Advanced Materials for Optics and Electronics	Adv. Mater. Opt. Electron.	Adv Mat
 Advanced Materials	Adv. Mater.	Adv Mater
 Advanced Powder Technology	Adv. Powder Technol.	Adv Powder Technol
 Advanced Synthesis & Catalysis	Adv. Synth. Catal.	Adv Synth Catal
+Advanced Synthesis \& Catalysis	Adv. Synth. Catal.	Adv Synth Catal
 Advanced Synthesis and Catalysis	Adv. Synth. Catal.	Adv Synth Catal
 Advances in Applied Microbiology	Adv. Appl. Microbiol.	Adv Appl Microbiol
 Advances in Atomic Molecular and Optical Physics	Adv. At. Mol. Opt. Phy.	Adv At Mol Opt Phy
@@ -72,6 +78,7 @@ Advances in Space Research	Adv. Space Res.	Adv Space Res
 Advances in X-Ray Analysis	Adv. X-Ray Anal.	Adv X-Ray Anal
 Adverse Drug Reactions and Toxicological Reviews	Adverse Drug React. Toxicol. Rev.	Adverse Drug React Toxicol Rev
 Aerosol Science and Technology	Aerosol Sci. Technol.	Aerosol Sci Technol
+Aggregate	Aggregate	Aggregate
 AIChE Journal	AlChE J.	AlChE J
 AIChE Symposium Series	AlChE Symp. Ser.	AlChE Symp Ser
 American Ceramic Society Bulletin	Am. Ceram. Soc. Bull.	Am Ceram Soc Bull
@@ -167,6 +174,7 @@ Atomic Energy	At. Energ.	At Energ
 Atomic Spectroscopy	At. Spectrosc.	At Spectrosc
 Atomization and Sprays	Atomization Sprays	Atomization Sprays
 Australian Journal of Chemistry	Aust. J. Chem.	Aust J Chem
+Australian Journal of Zoology	Aust. J. Zool.	Aust J Zool
 Behavioural Pharmacology	Behav. Pharmacol.	Behav Pharmacol
 Berichte der Bunsen-Gesellschaft Physical Chemistry Chemical Physics	Ber. Bunsen-Ges. Phys. Chem	Ber Bunsen-Ges Phys Chem
 Biocatalysis and Biotransformation	Biocatal. Biotransform.	Biocatal Biotransform
@@ -194,16 +202,19 @@ Biological Membranes	Biol. Membr.	Biol Membr
 Biological Trace Element Research	Biol. Trace Elem. Res.	Biol Trace Elem Res
 Biomass and Bioenergy	Biomass Bioenergy	Biomass Bioenergy
 Biomedical Chromatography	Biomed. Chromatogr.	Biomed Chromatogr
+Biomedical Journal	Biomed. J.	Biomed J
 Bio-Medical Materials and Engineering	Bio-Med. Mater. Eng.	Bio-Med Mater Eng
 Biomedical Microdevices	Biomed. Microdevices	Biomed Microdevices
 Biomolecular Engineering	Biomol. Eng	Biomol Eng
 Bioorganic & Medicinal Chemistry Letters	Bioorg. Med. Chem. Lett.	Bioorg Med Chem Lett
 Bioorganic & Medicinal Chemistry Letters	Biorg. Med. Chem. Lett.	Biorg Med Chem Lett
 Bioorganic & Medicinal Chemistry	Biorg. Med. Chem.	Biorg Med Chem
+Bioorganic \& Medicinal Chemistry	Biorg. Med. Chem.	Biorg Med Chem
 Bioorganic and Medicinal Chemistry	Bioorg. Med. Chem.	Bioorg Med Chem
 Bioorganic and Medicinal Chemistry Letters	Bioorg. Med. Chem. Lett.	Bioorg Med Chem Lett
 Bioorganic Chemistry	Bioorg. Chem.	Bioorg Chem
 Bioorganicheskaya Khimiya	Bioorg. Khim	Bioorg Khim
+Biopolymers	Biopolymers	Biopolymers
 Biopharmaceutics and Drug Disposition	Biopharm. Drug Dispos.	Biopharm Drug Dispos
 Biophysical Chemistry	Biophys. Chem.	Biophys Chem
 Biophysical Journal	Biophys. J.	Biophys J
@@ -259,6 +270,8 @@ Catalysis Communications	Catal. Commun.	Catal Commun
 Catalysis Letters	Catal. Lett.	Catal Lett
 Catalysis Reviews - Science and Engineering	Cat. Rev. - Sci. Eng.	Cat Rev - Sci Eng
 Catalysis Today	Catal. Today	Catal Today
+CCS Chemistry	CCS Chem.	CCS Chem
+Cell	Cell	Cell
 Cell Biochemistry and Function	Cell Biochem. Funct.	Cell Biochem Funct
 Cellular Physiology and Biochemistry	Cell. Physiol. Biochem.	Cell Physiol Biochem
 Cellular Polymers	Cell. Polym.	Cell Polym
@@ -296,6 +309,7 @@ Chemical Reviews	Chem. Rev.	Chem Rev
 Chemical Reviews (Washington, D. C.)	Chem. Rev.	Chem Rev
 Chemical Reviews (Washington, DC)	Chem. Rev.	Chem Rev
 Chemical Reviews (Washington, DC, United States)	Chem. Rev.	Chem Rev
+Chemical Science	Chem. Sci.	Chem Sci
 Chemical Senses	Chem. Senses	Chem Senses
 Chemical Society Reviews	Chem. Soc. Rev.	Chem Soc Rev
 Chemical Speciation and Bioavailability	Chem. Speciation Bioavailability	Chem Speciation Bioavailability
@@ -370,14 +384,18 @@ Comptes Rendus de l' Academie des Sciences Serie IIb:Mecanique Physique Chimie A
 Comptes Rendus de l' Academie des Sciences Serie IIc:Chemie	C.R. Acad. Sci., Ser. IIc: Chim.	CR Acad Sci, Ser IIc: Chim
 Comptes Rendus de l' Academie des Sciences Serie III: Sciences de la Vie	C.R. Acad. Sci., Ser. III	CR Acad Sci, Ser III
 Computation Materials Science	Comput. Mater. Sci.	Comput Mater Sci
+Computational Materials Science	Comput. Mater. Sci.	Comput Mater Sci
 Computational and Theoretical Chemistry	Comput. Theor. Chem.	Comput Theor Chem
 Computational & Theoretical Chemistry   Comput. Theor. Chem.    Comput Theor Chem
+Computational \& Theoretical Chemistry   Comput. Theor. Chem.    Comput Theor Chem
 Computational and Theoretical Polymer Science	Comput. Theor. Polym. Sci.	Comput Theor Polym Sci
 Computer Physics Communications	Comput. Phys. Commun.	Comput Phys Commun
 Computer Physics Reports	Comput. Phys. Rep.	Comput Phys Rep
 Computers and Chemical Engineering	Comput. Chem. Eng.	Comput Chem Eng
 Computers & Chemistry	Comput. Chem.	Comput Chem
+Computers \& Chemistry	Comput. Chem.	Comput Chem
 Computers & Chemistry (Oxford, United Kingdom)	Comput. Chem. (Oxford, U. K.)	Comput Chem (Oxford, U K)
+Computers \& Chemistry (Oxford, United Kingdom)	Comput. Chem. (Oxford, U. K.)	Comput Chem (Oxford, U K)
 Computers and Chemistry	Comput. Chem. (Oxford)	Comput Chem (Oxford)
 Concepts in Magenetic Resonance	Concepts Magn. Reson.	Concepts Magn Reson
 Concrete Engineering International	Concr. Eng. Int.	Concr Eng Int
@@ -502,6 +520,7 @@ Free Radical Research	Free Radical Res.	Free Radical Res
 Fresenius Environment Bulletin	Fresenius Environ. Bull.	Fresenius Environ Bull
 Fresenius Journal of Analytical Chemistry	Fresenius J. Anal. Chem.	Fresenius J Anal Chem
 Frontier Science Series	Front Sci. Ser.	Front Sci Ser
+Frontiers in Molecular Biosciences	Front. Mol. Biosci.	Front Mol Biosci
 Fuel Processing Technology	Fuel Process. Technol.	Fuel Process Technol
 Fuel Science and Technology International	Fuel Sci. Technol. Int.	Fuel Sci Technol Int
 Fullerene Science and Technology	Fullerene Sci. Technol.	Fullerene Sci Technol
@@ -538,6 +557,7 @@ Hazardous Waste and Hazardous Materials	Hazard. Waste Hazard. Mater.	Hazard Wast
 Health Physics	Health Phys.	Health Phys
 Heat and Mass Transfer	Heat Mass Transfer.	Heat Mass Transfer
 Heat Treatment of Metals	Heat Treat. Met.	Heat Treat Met
+Heliyon	Heliyon	Heliyon
 Helvetica Chimica Acta	Helv. Chim. Acta	Helv Chim Acta
 Heteroatom Chemistry	Heteroat. Chem	Heteroat Chem
 Heterocyclic Communications	Heterocycl. Commun.	Heterocycl Commun
@@ -622,6 +642,7 @@ Internet Journal of Chemistry	Internet J. Chem.	Internet J Chem
 Internet Journal of Vibrational Spectroscopy	Internet J. Vib. Spectro.	Internet J Vib Spectro
 Inzynieria Chemiczna i Procesowa	Inz. Chem. Procesowa	Inz Chem Procesowa
 Ironmaking and Steelmaking	Ironmaking Steelmaking	Ironmaking Steelmaking
+iScience	iScience	iScience
 ISIJ International	ISIJ Int.	ISIJ Int
 Israel Journal of Chemistry	Isr. J. Chem.	Isr J Chem
 Japanese Journal of Applied Physics	Jpn. J. Appl. Phys.	Jpn J Appl Phys
@@ -712,6 +733,7 @@ Journal of Combinatorial Chemistry	J. Comb. Chem.	J Comb Chem
 Journal of Composite Materials	J. Compos. Mater.	J Compos Mater
 Journal of Composites Technology and Research	J. Compos. Tech. Res.	J Compos Tech Res
 Journal of Computational Chemistry	J. Comput. Chem.	J Comput Chem
+Journal of Computational Physics	J. Comput. Phys.	J Comput Phys
 Journal of Computer-Aided Materials Design	J. Comput. Aided Mater. Des.	J Comput Aided Mater Des
 Journal of Computer-Aided Molecular Design	J. Comput. Aided Mol. Des.	J Comput Aided Mol Des
 Journal of Contaminant Hydrology	J. Contam. Hydrol.	J Contam Hydrol
@@ -1025,6 +1047,7 @@ Materials Today	Mater. Today	Mater Today
 Materials Transactions, JIM	Mater. Trans., JIM	Mater Trans, JIM
 Materialwissenschaft und Werkstofftechnik	Materialwiss. Werkstofftech.	Materialwiss Werkstofftech
 Matrix Biology	Matrix Biol.	Matrix Biol
+mBio	mBio	mBio
 Measurement Science and Technology	Meas. Sci. Technol.	Meas Sci Technol
 Mechanics of Composite Materials	Mech. Compos. Mater.	Mech Compos Mater
 Mechanics of Composite Materials and Structures	Mech. Compos. Mater. Struct.	Mech Compos Mater Struct
@@ -1066,8 +1089,9 @@ Modern Physics Letters A	Mod. Phys. Lett. A	Mod Phys Lett A
 Modern Physics Letters B	Mod. Phys. Lett. B	Mod Phys Lett B
 Molecular and Cellular Biochemistry	Mol. Cell. Biochem.	Mol Cell Biochem
 Molecular and Supramolecular Photochemistry	Mol. Supramol. Photochem.	Mol Supramol Photochem
+Molecular Biology of the Cell	Mol. Biol. Cell	Mol Biol Cell
 Molecular Crystals and Liquid Crystals Science and Technology Section A	Mol. Cryst. Liq. Cryst. Sci. Technol., Sect. A	Mol Cryst Liq Cryst Sci Technol, Sect A
-Molecular Crystals and Liquid Crystal Science and Technology Section C	Mol. Cryst. Liq. Cryst. Sci. Technol., Sect. C	Mol Cryst Liq Cryst Sci Technol, Sect C
+Molecular Crystals and Liquid Crystal	Science and Technology Section C	Mol. Cryst. Liq. Cryst. Sci. Technol., Sect. C	Mol Cryst Liq Cryst Sci Technol, Sect C
 Molecular Interventions	Mol. Interventions	Mol Interventions
 Molecular Marine Biology and Biotechnology	Mol. Mar. Biol. Biotech,	Mol Mar Biol Biotech,
 Molecular Microbiology	Mol. Microbiol.	Mol Microbiol
@@ -1098,6 +1122,8 @@ Nature Biotechnology	Nat. Biotechnol.	Nat Biotechnol
 Nature Chemical Biology	Nat. Chem. Biol.	Nat Chem Biol
 Nature Communications	Nat. Commun.	Nat Commun
 Nature materials	Nat. Mater.	Nat Mater
+Nature Structural & Molecular Biology	Nat. Struct. Mol. Biol.	Nat Struct Mol Biol
+Nature Structural \& Molecular Biology	Nat. Struct. Mol. Biol.	Nat Struct Mol Biol
 Naunyn-Schmiedeberg's Archives of Pharmacology	Naunyn-Schmiedeberg's Arch. Pharmacol.	Naunyn-Schmiedeberg's Arch Pharmacol
 NDT and E International	NDT and E Int.	NDT and E Int
 Neftyanoe Khozyaistvo	Neft. Khoz.	Neft Khoz
@@ -1133,6 +1159,8 @@ Optics Communication	Opt. Commun.	Opt Commun
 Optics Express	Opt. Express	Opt Express
 Optics Letters	Opt. Lett.	Opt Lett
 Optika i Spektroskopiya	Opt Spektrosk.	Opt Spektrosk
+Organic & Biomolecular Chemistry	Org. Biomol. Chem.	Org Biomol Chem
+Organic \& Biomolecular Chemistry	Org. Biomol. Chem.	Org Biomol Chem
 Organic Electronics	Org. Electron.	Org Electron
 Organic Geochemistry	Org. Geochem.	Org Geochem
 Organic Letters	Org. Lett.	Org Lett
@@ -1195,6 +1223,7 @@ Physical Review C	Phys. Rev. C	Phys Rev C
 Physical Review D	Phys. Rev. D	Phys Rev D
 Physical Review E	Phys. Rev. E	Phys Rev E
 Physical Review Letters	Phys. Rev. Lett.	Phys Rev Lett
+Physical Review Materials	Phys. Rev. Mater.	Phys Rev Mater
 Physical Status Solidi A	Phys. Status Solidi A	Phys Status Solidi A
 Physical Status Solidi B	Phys. Status Solidi B	Phys Status Solidi B
 Physics and Chemistry of Glasses	Phys. Chem. Glasses	Phys Chem Glasses
@@ -1274,6 +1303,7 @@ Progress in Surface Science	Prog. Surf. Sci.	Prog Surf Sci
 Protection of Metals	Prot. Met	Prot Met
 Protein Engineering	Protein Eng.	Protein Eng
 Protein Science	Protein Sci.	Protein Sci
+Proteins: Structure, Function, and Bioinformatics	Proteins: Struct., Funct., Bioinf.	Proteins: Struct, Funct, Bioinf
 Przemysl Chemiczny	Przem. Chem.	Przem Chem
 Pure and Applied Chemistry	Pure Appl. Chem.	Pure Appl Chem
 Quantitative Structure-Activity Relationships	Quant. Struct.-Act. Relat.	Quant Struct-Act Relat
@@ -1293,6 +1323,7 @@ Refractories and Industrial Ceramics	Refract. Ind. Ceram	Refract Ind Ceram
 Regulatory Toxicology and Pharmacology	Regul. Toxicol. Pharm.	Regul Toxicol Pharm
 Renewable and Sustainable Energy Reviews	Renewable Sustainable Energy Rev.	Renewable Sustainable Energy Rev
 Renewable & Sustainable Energy Reviews  Renewable Sustainable Energy Rev.   Renewable Sustainable Energy Rev
+Renewable \& Sustainable Energy Reviews  Renewable Sustainable Energy Rev.   Renewable Sustainable Energy Rev
 Reports on Progress in Physics	Rep. Prog. Phys.	Rep Prog Phys
 Research Communications in Molecular Pathology and Pharmacology	Res. Commun. Mol. Pathol. Pharmacol.	Res Commun Mol Pathol Pharmacol
 Research in Microbiology	Res. Microbiol.	Res Microbiol
@@ -1323,11 +1354,13 @@ Russion Journal of Coordination Chemistry	Russ. J. Coord. Chem.	Russ J Coord Che
 SAMPE Journal	SAMPE J.	SAMPE J
 Scandinavian Journal of Metallurgy	Scand. J. Metall.	Scand J Metall
 Science	Science	Science
+Science Advances	Sci. Adv.	Sci Adv
 Science and Technology of Welding and Joining	Sci. Technol. Weld. Joining	Sci Technol Weld Joining
 Science in China, Series B Chemistry	Sci. China, Ser. B	Sci China, Ser B
 Science in China, Series E Technological Sciences	Sci. China, Ser. E	Sci China, Ser E
 Science of the Total Environment	Sci. Total Environ.	Sci Total Environ
 Science Progress	Sci. Prog.	Sci Prog
+Scientific Reports	Sci. Rep.	Sci Rep
 Scripta Materialia	Scripta Mater.	Scripta Mater
 Semiconductor Science and Technology	Semicond. Sci. Technol.	Semicond Sci Technol
 Sensors and Actuators, A	Sens. Actuators, A	Sens Actuators, A
