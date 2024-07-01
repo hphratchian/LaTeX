@@ -11,6 +11,7 @@ ACS Applied Nano Materials	ACS Appl. Nano Mater.	ACS Appl Nano Mater
 ACS Chemical Biology	ACS Chem. Biol.	ACS Chem Biol
 ACS ES&T Water	ACS ES\&T Water	ACS ES\&T Water
 ACS ES\&T Water	ACS ES\&T Water	ACS ES\&T Water
+ACS Nano	ACS Nano	ACS Nano
 ACS Sensors	ACS Sens.	ACS Sens
 ACS Symposium Series	ACS Symp. Ser.	ACS Symp Ser
 Acta Biochimica Polonica	Acta Biochim. Pol.	Acta Biochim Pol
@@ -165,6 +166,7 @@ Arzneimittel-Forschung/Drug Research	Arzneim.-Forsch.	Arzneim-Forsch
 Asian Journal of Chemistry	Asian J. Chem.	Asian J Chem
 Asian Journal of Spectroscopy	Asian J. Spectro.	Asian J Spectro
 ASTM Specical Technical Publication	ASTM Spec. Tech. Publ.	ASTM Spec Tech Publ
+Astronomische Nachrichten	Astron. Nachr.	Astron Nachr
 Astronomy and Astrophysics	Astron. Astrophys.	Astron Astrophys
 Astronomy Journal	Astron. J.	Astron J
 Astrophysics Journal	Astrophys J.	Astrophys J
@@ -911,6 +913,7 @@ Journal of Radioanalytical and Nuclear Chemistry Letters	J. Radioanal. Nucl. Che
 Journal of Raman Spectroscopy	J. Raman Spectrosc.	J Raman Spectrosc
 Journal of Rapid Methods and Automation in Microbiology	J. Rapid Methods Autom. Microbiol.	J Rapid Methods Autom Microbiol
 Journal of Reinforced Plastics and Composites	J. Reinf. Plast. Compos.	J Reinf Plast Compos
+Journal of Research of the National Institute of Standards and Technology	J. Res. Natl. Inst. Stand. Technol.	J Res Natl Inst Stand Technol
 Journal of Rheology	J. Rheol.	J Rheol
 Journal of Scientific and Industrial Research	J. Sci. Ind. Res.	J Sci Ind Res
 Journal of Separation Science	J. Sep. Sci.	J Sep Sci
@@ -1098,6 +1101,7 @@ Molecular Microbiology	Mol. Microbiol.	Mol Microbiol
 Molecular Pharmacology	Mol. Pharmacol.	Mol Pharmacol
 Molecular Physics	Mol. Phys.	Mol Phys
 Molecular Reproduction and Development	Mol. Reprod. Dev	Mol Reprod Dev
+Molecules	Molecules	Molecules
 Monatshefte fur Chemie	Monatsh. Chem.	Monatsh Chem
 Monthy Notices of the Royal Astronomical Society	Mon. Not. R. Astron. Soc.	Mon Not R Astron Soc
 MRS Bulletin	MRS Bull.	MRS Bull
@@ -1122,6 +1126,7 @@ Nature Biotechnology	Nat. Biotechnol.	Nat Biotechnol
 Nature Chemical Biology	Nat. Chem. Biol.	Nat Chem Biol
 Nature Communications	Nat. Commun.	Nat Commun
 Nature materials	Nat. Mater.	Nat Mater
+Nature Photonics	Nat. Photonics	Nat Photonics
 Nature Structural & Molecular Biology	Nat. Struct. Mol. Biol.	Nat Struct Mol Biol
 Nature Structural \& Molecular Biology	Nat. Struct. Mol. Biol.	Nat Struct Mol Biol
 Naunyn-Schmiedeberg's Archives of Pharmacology	Naunyn-Schmiedeberg's Arch. Pharmacol.	Naunyn-Schmiedeberg's Arch Pharmacol
@@ -1196,6 +1201,7 @@ Phase Transitions	Phase Transitions	Phase Transitions
 Philosophical Magazine A	Philos. Mag. A	Philos Mag A
 Philosophical Magazine B	Philos. Mag. B	Philos Mag B
 Philosophical Magazine Letters	Philos. Mag. Lett.	Philos Mag Lett
+Philosophical Transactions of the Royal Society, A: Mathematical, Physical & Engineering Sciences	Philos. Trans. R. Soc. A	Philos Trans R Soc A
 Philosophical Transactions of the Royal Society of London, Series A	Philos. Trans. R. Soc. London, Ser. A	Philos Trans R Soc London, Ser A
 Philosophical Transactions of the Royal Society of London, Series B	Philos. Trans. R. Soc. London, Ser. B	Philos Trans R Soc London, Ser B
 Phosphorus Sulfur Silicon and the Related Elements	Phosphorus, Sulfur Silicon Relat. Elem.	Phosphorus, Sulfur Silicon Relat Elem
@@ -1224,6 +1230,7 @@ Physical Review D	Phys. Rev. D	Phys Rev D
 Physical Review E	Phys. Rev. E	Phys Rev E
 Physical Review Letters	Phys. Rev. Lett.	Phys Rev Lett
 Physical Review Materials	Phys. Rev. Mater.	Phys Rev Mater
+Physical Review Research	Phys. Rev. Res.	Phys Rev Res
 Physical Status Solidi A	Phys. Status Solidi A	Phys Status Solidi A
 Physical Status Solidi B	Phys. Status Solidi B	Phys Status Solidi B
 Physics and Chemistry of Glasses	Phys. Chem. Glasses	Phys Chem Glasses
@@ -1300,6 +1307,7 @@ Progress in Polymer Science	Prog. Polym. Sci.	Prog Polym Sci
 Progress in Reaction Kinetics	Prog. React. Kinet.	Prog React Kinet
 Progress in Solid State Chemistry	Prog. Solid State Chem.	Prog Solid State Chem
 Progress in Surface Science	Prog. Surf. Sci.	Prog Surf Sci
+Progress of Theoretical Physics	Prog. Theor. Phys.	Prog Theor Phys
 Protection of Metals	Prot. Met	Prot Met
 Protein Engineering	Protein Eng.	Protein Eng
 Protein Science	Protein Sci.	Protein Sci
@@ -1390,6 +1398,7 @@ Spill Science and Technology Bulletin	Spill Sci. Technol. Bull.	Spill Sci Techno
 Springer Series in Chemical Physics	Springer Ser. Chem. Phys.	Springer Ser Chem Phys
 Springer Series in Solid-State Sciences	Springer Ser. Solid-State Sci.	Springer Ser Solid-State Sci
 Structural Chemistry	Struct. Chem.	Struct Chem
+Structural Dynamics	Struct. Dyn.	Struct Dyn
 Structure and Bonding	Struct. Bond.	Struct Bond
 Studies in Natural Products Chemistry	Stud. Nat. Prod. Chem.	Stud Nat Prod Chem
 Studies in Surface Science and Catalysis	Stud. Surf. Sci. Catal.	Stud Surf Sci Catal
@@ -1447,6 +1456,7 @@ Trends in Biotechnology	Trends Biotechnol.	Trends Biotechnol
 Tsvetnaya Metally	Tsvetn. Met. (Moscow)	Tsvetn Met (Moscow)
 Ukrainskii Fizicheskii Zhurnal	Ukr. Fiz. Zh.	Ukr Fiz Zh
 Ukrainskii Khimicheskii Zhurnal	Ukr. Khim. Zh.	Ukr Khim Zh
+Ultramicroscopy	Ultramicroscopy	Ultramicroscopy
 Ultrasonics Sonochemistry	Ultrason. Sonochem.	Ultrason Sonochem
 Uspekhi Khimii	Usp. Khim.	Usp Khim
 Vibrational Spectroscopy	Vib. Spectrosc	Vib Spectrosc
