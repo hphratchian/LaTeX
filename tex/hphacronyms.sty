@@ -13,6 +13,7 @@
 %           \AP       -- Approximate Projection (AP)
 %           \CAS      -- Complete Active Space
 %           \CI       -- configuration interaction
+%           \CIS      -- configuration interaction with singles substitutions
 %           \DDNO     -- difference density natural orbital; \DDNOs, \capDDNO, and \capDDNOs are
 %                        also available
 %           \deltaDFT -- delta-density-functional-theory
@@ -85,6 +86,12 @@
 \providecommand{\CI}{abc}
 \renewcommand{\CI}
   {\addtocounter{cicounter}{1}\ifthenelse{\equal{\thecicounter}{1}}{Configuration Interaction (CI)}{CI}}
+%
+%   \CIS
+\newcounter{ciscounter} \setcounter{ciscounter}{0}
+\providecommand{\CIS}{abc}
+\renewcommand{\CIS}
+  {\addtocounter{ciscounter}{1}\ifthenelse{\equal{\theciscounter}{1}}{Configuration Interaction with singles substitutions (CIS)}{CIS}}
 %
 %   \DDNO, \DDNOs, \capDDNO, \capDDNOs
 \newcounter{hphddnocounter} \setcounter{hphddnocounter}{0}
