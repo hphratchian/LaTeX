@@ -25,8 +25,10 @@
 %           \HF       -- Hartree-Fock
 %           \IMOM     -- initial maximum overlap method; \IMOMs, \capIMOM,
 %                        and \capIMOMs also available
+%           \IPM      -- independent particle model; \capIPM is also available
 %           \IRC      -- intrinsic reaction coordinate; \capIRC is also available
 %           \KS       -- Kohn-Sham
+%           \LCAO     -- linear combination of atomic orbitals (LCAO)
 %           \MCSD     -- Merced City School District
 %           \MO       -- molecular orbital; \MOs is also available
 %           \MOM      -- initial maximum overlap method; \MOMs, \capMOM,
@@ -169,6 +171,15 @@
 \renewcommand{\capIMOMs}
   {\addtocounter{hphimomcounter}{1}\ifthenelse{\equal{\thehphimomcounter}{1}}{Initial maximum overlap methods (IMOMs)}{IMOMs}}
 %
+%   \IPM
+\newcounter{hphipmcounter} \setcounter{hphipmcounter}{0}
+\providecommand{\IPM}{abc}
+\renewcommand{\IPM}
+  {\addtocounter{hphipmcounter}{1}\ifthenelse{\equal{\thehphipmcounter}{1}}{independent particle model (IPM)}{IPM}}
+\providecommand{\capIPM}{abc}
+\renewcommand{\capIPM}
+  {\addtocounter{hphipmcounter}{1}\ifthenelse{\equal{\thehphipmcounter}{1}}{Independent particle model (IPM)}{IPM}}
+%
 %   \IRC
 \newcounter{hphirccounter} \setcounter{hphirccounter}{0}
 \providecommand{\IRC}{abc}
@@ -177,6 +188,12 @@
 \providecommand{\capIRC}{abc}
 \renewcommand{\capIRC}
   {\addtocounter{hphirccounter}{1}\ifthenelse{\equal{\thehphirccounter}{1}}{Intrinsic reaction coordinate (IRC)}{IRC}}
+%
+%   \LCAO
+\newcounter{hphlcaocounter} \setcounter{hphlcaocounter}{0}
+\providecommand{\LCAO}{abc}
+\renewcommand{\LCAO}
+  {\addtocounter{hphlcaocounter}{1}\ifthenelse{\equal{\thehphlcaocounter}{1}}{linear combination of atomic orbitals (LCAO)}{LCAO}}
 %
 %   \KS
 \newcounter{hphkscounter} \setcounter{hphkscounter}{0}
